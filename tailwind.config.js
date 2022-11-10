@@ -7,14 +7,22 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+      ...defaultTheme.screens
+    },
     extend: {
       fontFamily: {
-        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: "#0C9A4A",
         secondary: "#202428",
-        tertiary :"#F5F5F5"
+        tertiary: "#F5F5F5",
+        fblack:"#07080C"
       },
     },
   },

@@ -8,7 +8,7 @@ const Button = (props: {
 }) => {
   const { setOpen, navigation, open } = props;
   return (
-    <div className="overflow-hidden z-100">
+    <div className="lg:hidden">
       <button
         onClick={() => {
           setOpen(true);
@@ -16,9 +16,8 @@ const Button = (props: {
       >
         {props.children}
       </button>
-      <div className="relative -top-8">
       {open && (
-        <div>
+        <div className="relative -top-10 -right-1">
           <button
             onClick={() => {
               setOpen(false);
@@ -29,7 +28,7 @@ const Button = (props: {
           </button>
 
           {navigation.main.map((item: any) => (
-            <div key={item.name} className="px-5 py-2 bg-tertiary">
+            <div key={item.name} className="px-5 py-2 bg-tertiary ">
               <a
                 href={item.href}
                 className="font-medium text-normal text-secondary p-5"
@@ -40,7 +39,6 @@ const Button = (props: {
           ))}
         </div>
       )}
-      </div>
     </div>
   );
 };

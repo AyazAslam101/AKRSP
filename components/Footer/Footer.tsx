@@ -73,7 +73,7 @@ const navigation = {
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t-2 mt-8">
+    <footer className="bg-white border-t-2 mt-7">
       <div className="max-w-7xl mx-auto py-10 px-4 overflow-hidden sm:px-6 lg:px-8">
         <div className="flex justify-center justify-evenly">
           {navigation?.links?.map((item, key) => (
@@ -85,11 +85,9 @@ const Footer = () => {
                 {item?.name}
               </a>
               <div className="mt-4">
-                {item?.lists?.map((list,key) => (
-                  <p className="p-2 -ml-2 font-sans font-normal text-medium">
-                    <a href={list?.href}>
-                    {list?.name}
-                    </a>
+                {item?.lists?.map((list, key) => (
+                  <p className="p-2 -ml-2 font-sans font-normal text-md">
+                    <a href={list?.href}>{list?.name}</a>
                   </p>
                 ))}
               </div>
@@ -97,7 +95,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center items-baseline justify-evenly bg-primary h-10 mb-1 mt-8">
+      <div className="flex justify-center items-baseline justify-evenly bg-primary mb-1 mt-8">
         <div>
           <p className="text-center text-sm text-white">
             &copy;{new Date().getFullYear()} Aga Khan Rural Support Programme.
