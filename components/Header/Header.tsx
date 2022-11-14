@@ -5,7 +5,6 @@ import Layout from "../Layout";
 const Header = () => {
   return (
     <>
-      <Layout>
         <div>
           <div className="grid grid-cols-2 gap-5">
             <div>
@@ -52,7 +51,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </Layout>
     </>
   );
 };
