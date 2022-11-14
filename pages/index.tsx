@@ -1,16 +1,15 @@
 // import Layout from '../components/Layout'
 import Layout from '../components/Layout'
 import  '../styles/Home.module.css'
-import Image from 'next/image'
-import Rectangle from "../public/rectangle.png";
 import Header from '../components/Header/Header';
 import Post from '../components/Post/Post';
 import Postv1 from '../components/Postv1/Postv1';
+import Frame from '../components/Frame/Frame';
 
 
 export default function Home() {
   return (
-    <Postv1></Postv1> 
+  <Frame/>
   )
 }
 {/* <div className="flex flex-wrap justify-center">
