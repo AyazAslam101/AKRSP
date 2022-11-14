@@ -3,7 +3,7 @@ import Image from "next/image";
 const Post = () => {
   return (
     <>
-      {/* <div className="max-w-7xl mx-auto py-10 px-2 overflow-hidden sm:px-4 container lg:px-30 py-2 mx-auto">
+      <div className="max-w-7xl mx-auto py-10 px-2 overflow-hidden sm:px-4 container lg:px-30 py-2 mx-auto">
         <div className="lg:grid lg:grid-cols-2 sm:block md:block grid grid-rows-3 gap-2 lg:gap-4">
           <div className="mt-16">
             <h2 className="text-5xl font-bold leading-tight text-black">
@@ -58,7 +58,7 @@ const Post = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

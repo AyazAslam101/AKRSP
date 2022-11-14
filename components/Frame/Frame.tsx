@@ -2,24 +2,26 @@ import React from "react";
 
 const data = [
   {
-    update: "latest updates",
+    update: "Latest Updates",
     created_at: "26-09-2022",
     description:
-      " Aga Khan Rural Support Programme (AKRSP) Provides PPE worth PKR16,997,000 to Sindh Government",
+      "Aga Khan Rural Support Programme (AKRSP) Provides PPE worth PKR16,997,000 to Sindh Government",
   },
 ];
 
 const Frame = () => {
   return (
-    <div className="max-w-7xl mx-auto py-2 container lg:px-36">
+    <div className="max-w-7xl mx-auto py-2 container lg:px-40">
       {data.map((item) => {
         return (
-          <div className="bg-primary h-56 flex items-center rounded-md px-10">
+          <div className="bg-primary p-12 flex items-center justify-center rounded-md px-10">
             <div>
-              <p className="mb-8 font-medium text-lg text-white">
+              <p className="mb-4 font-medium text-lg text-white -mt-4">
                 {item.update} - <span>{item.created_at}</span>
               </p>
-              <p className="font-semibold text-xl ">{item.description}</p>
+              <p className="font-medium text-2xl text-white leading-10">
+                {item.description}
+              </p>
             </div>
           </div>
         );

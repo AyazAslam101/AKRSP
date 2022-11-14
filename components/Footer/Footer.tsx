@@ -102,11 +102,11 @@ const Footer = () => {
             Developer: AKRSP IT Department.
           </p>
         </div>
-        <div className="flex">
+        <div className="flex divide-x-2 ">
           {navigation.main.map((item) => (
             <div key={item.name} className="px-1 py-2">
               <a href={item.href} className="text-sm text-white">
-                {item.name} |
+                {item.name} 
               </a>
             </div>
           ))}
