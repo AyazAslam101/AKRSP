@@ -11,7 +11,7 @@ const data = [
 
 const Frame = () => {
   return (
-    <div className="max-w-7xl mx-auto py-2 container lg:px-40">
+    <div className="py-2 lg:px-40">
       {data.map((item) => {
         return (
           <div className="bg-primary p-12 flex items-center justify-center rounded-md px-10">

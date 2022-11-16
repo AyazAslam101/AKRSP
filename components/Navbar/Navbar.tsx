@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <div className="mx-auto sm:px-4 lg:px-8 m-1">
-        <div className="flex-shrink-0 flex justify-center items-baseline justify-between ">
+        <div className="flex-shrink-0 flex justify-center items-baseline justify-between">
           <div className="px-2 ml-2">
             <a href="/">
               <Image
@@ -44,7 +44,7 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          <div className="absoulte shrink  top-2 right-0 ">
+          <div className="absolute shrink  top-2 right-0 ">
             <Button setOpen={setOpen} open={open} navigation={navigation}>
               <svg
                 height="26"

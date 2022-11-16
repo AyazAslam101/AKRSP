@@ -36,7 +36,10 @@ module.exports = {
         secondary: "#202428",
         tertiary: "#F5F5F5",
         fblack:"#07080C",
-        bgprimary:"#F9F9F9"
+        bgprimary:"#F9F9F9",
+        svgbg: "#F0F9F4",
+        playerbg:"#DBF0E4"
+
       },
     },
   },

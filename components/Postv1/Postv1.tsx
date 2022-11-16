@@ -11,7 +11,7 @@ import image8 from "../../public/image12.png";
 
 const Postv1 = () => {
   return (
-    <div className="max-w-7xl mx-auto py-10 px-2 overflow-hidden container sm:px-4 lg:px-10">
+    <div className="py-10 px-2 overflow-hidden container sm:px-4 lg:px-10">
       <div className="text-center">
         <h2 className="text-3xl leading-10 font-extrabold">Media Gallery</h2>
         <h4 className="text-2xl leading-10 font-semibold mt-2">
@@ -63,7 +63,7 @@ const Postv1 = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center -mt-12">
         <button className="border-primary border-solid border-2 py-1 px-2 rounded ">
           <svg
             width="10"
@@ -102,34 +102,3 @@ const Postv1 = () => {
 };
 
 export default Postv1;
-
-{
-  /* 
-   <div className="max-w-full flex justify-center items-cener flex-wrap gap-1 	h-auto relative">
-        <div className="flex flex-wrap justify-center ">
-          <Image src={image1} alt="alt" />
-        </div>
-        <div>
-          <Image src={image2} alt="alt" />
-        </div>
-        <div>
-          <Image src={image5} alt="alt" />
-        </div>
-        <div>
-          <Image src={image7} alt="alt" />
-        </div>
-        <div>
-          <Image src={image3} alt="alt" />
-        </div>
-        <div>
-          <Image src={image4} alt="alt" className="relative bottom-44" />
-        </div>
-        <div>
-          <Image src={image6} alt="alt" />
-        </div>
-        <div>
-          <Image src={image8} alt="alt" className="relative bottom-44" />
-        </div>
-      </div>
-  */
-}

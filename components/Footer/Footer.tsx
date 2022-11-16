@@ -75,7 +75,7 @@ const Footer = () => {
   return (
     <footer className="bg-white border-t-2 mt-7">
       <div className="max-w-7xl mx-auto py-10 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <div className="flex justify-center justify-evenly">
+        <div className="grid grid-cols-5 gap-5 justify-center justify-evenlyc">
           {navigation?.links?.map((item, key) => (
             <div key={key} className="px-1 py-2">
               <a
@@ -102,7 +102,7 @@ const Footer = () => {
             Developer: AKRSP IT Department.
           </p>
         </div>
-        <div className="flex divide-x-2 ">
+        <div className="flex">
           {navigation.main.map((item) => (
             <div key={item.name} className="px-1 py-2">
               <a href={item.href} className="text-sm text-white">
