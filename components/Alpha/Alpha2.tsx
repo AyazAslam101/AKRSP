@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Post = () => {
+const Alpha2 = () => {
   return (
     <>
       <div className="py-10 px-2 sm:px-4 py-2">
@@ -10,7 +10,7 @@ const Post = () => {
               Aga Khan Rural Support Programme <br />
               <span className="text-primary">Pakistan</span>
             </h2>yarn dev
-            
+
             <p className="py-2 font-medium text-lg leading-8 mt-2">
               The Aga Khan Rural Support Programme (AKRSP) is a private,
               non-profit company, established by the Aga Khan Foundation in 1982
@@ -64,4 +64,4 @@ const Post = () => {
   );
 };
 
-export default Post;
+export default Alpha2;

@@ -9,7 +9,7 @@ const data = [
   },
 ];
 
-const Frame = () => {
+const Alpha3 = () => {
   return (
     <div className="py-2 lg:px-40">
       {data.map((item) => {
@@ -30,4 +30,4 @@ const Frame = () => {
   );
 };
 
-export default Frame;
+export default Alpha3;

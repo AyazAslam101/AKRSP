@@ -9,7 +9,7 @@ import image6 from "../../public/image10.png";
 import image7 from "../../public/image11.png";
 import image8 from "../../public/image12.png";
 
-const Postv1 = () => {
+const Alpha4 = () => {
   return (
     <div className="py-10 px-2 overflow-hidden container sm:px-4 lg:px-10">
       <div className="text-center">
@@ -101,4 +101,4 @@ const Postv1 = () => {
   );
 };
 
-export default Postv1;
+export default Alpha4;
