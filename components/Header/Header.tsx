@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Alpha2 = () => {
+const Header = () => {
   return (
     <>
       <div className="py-10 px-2 sm:px-4 py-2 ">
@@ -64,4 +64,4 @@ const Alpha2 = () => {
   );
 };
 
-export default Alpha2;
+export default Header;

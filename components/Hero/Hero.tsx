@@ -9,7 +9,7 @@ const data = [
   },
 ];
 
-const Alpha3 = () => {
+const Hero = () => {
   return (
     <div className="py-2 lg:px-40">
       {data.map((item) => {
@@ -30,4 +30,4 @@ const Alpha3 = () => {
   );
 };
 
-export default Alpha3;
+export default Hero;
