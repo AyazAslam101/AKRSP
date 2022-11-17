@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="mx-auto sm:px-4 lg:px-8 m-1">
         <div className="flex-shrink-0 flex justify-center items-baseline justify-between ">
           <div className="px-2 ml-2">
-            <a href="/">
+            <a href="y">
               <Image
                 src={Logo}
                 alt="Picture of the author"
