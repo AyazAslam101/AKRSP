@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <div className="mx-auto sm:px-4 lg:px-8 m-1">
-        <div className="flex-shrink-0 flex justify-center items-baseline justify-between">
+        <div className="flex-shrink-0 lg:flex sm:block justify-enter items-baseline justify-around">
           <div className="px-2 ml-2">
             <a href="/">
               <Image

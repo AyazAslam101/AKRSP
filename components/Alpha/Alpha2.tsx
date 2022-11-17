@@ -3,13 +3,13 @@ import Image from "next/image";
 const Alpha2 = () => {
   return (
     <>
-      <div className="py-10 px-2 sm:px-4 py-2">
-        <div className="lg:grid lg:grid-cols-2 sm:grid-cols-2 md:block grid grid-cols-2 gap-2 lg:gap-4">
-          <div className="mt-16">
-            <h2 className="text-5xl font-bold leading-tight text-black">
-              Aga Khan Rural Support Programme <br />
-              <span className="text-primary">Pakistan</span>
-            </h2>yarn dev
+      <div className="py-10 px-2 sm:px-4 py-2 ">
+        <div className="lg:grid lg:grid-cols-2 sm:block md:block block gap-2 lg:gap-4">
+          <div className="mt-8">
+            <h2 className="text-5xl font-bold leading-tight text-black mr-2">
+              Aga Khan Rural Support Programme <br/>
+              <span className="text-primary font-bold leading-tight">Pakistan</span>
+            </h2>
 
             <p className="py-2 font-medium text-lg leading-8 mt-2">
               The Aga Khan Rural Support Programme (AKRSP) is a private,
@@ -21,7 +21,7 @@ const Alpha2 = () => {
             </p>
           </div>
           <div className="container py-2 mx-auto">
-            <div className="lg:grid lg:grid-cols-2 sm:grid-cols-2 md:hidden grid grid-cols-2 gap-2 sm:gap-4 md:gap-3 lg:gap-4 px-3 py-2">
+            <div className="lg:grid lg:grid-cols-2 sm:grid-cols-2 grid grid-cols-2 gap-2 sm:gap-2 md:gap-1 lg:gap-2 px-3 py-2">
               <div className="w-full">
                 <Image
                   src="/../public/image1.png"
@@ -36,7 +36,7 @@ const Alpha2 = () => {
                   alt="alt"
                   width={250}
                   height={100}
-                  className="absolute xl:right-16 xl:top-4 lg:right-8 lg:top-6 md:right-0 md:top-16 sm:right-0 sm:top-10 right-0"
+                  className="absolute xl:right-16 xl:top-4 lg:right-8 lg:top-6 md:right-72 md:-mr-1 md:top-4 sm:right-36 sm:top-4 right-14 top-4"
                 />
               </div>
               <div className="px-1">
@@ -53,7 +53,7 @@ const Alpha2 = () => {
                   width={300}
                   height={100}
                   alt="alt"
-                  className="absolute xl:mr-0 xl:right-28 xl:-top-1 lg:right-20 lg:mr-2 lg:top-0 md:right-56 md:top-0 sm:right-20 sm:top-10 right-10"
+                  className="absolute xl:mr-0 xl:right-28 xl:-top-0 lg:right-20 lg:mr-2 lg:top-0 md:right-72 md:top-0 sm:right-36 sm:top-0 right-28 -mr-1 "
                 />
               </div>
             </div>

@@ -1,22 +1,21 @@
 import Image from "next/image";
-import Layout from "../Layout/Layout";
 const Alpha = () => {
   return (
     <>
       <div className="py-5 px-2 overflow-hidden sm:px-4 lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 md:block lg:gap-2 md:gap-2 lg:gap-1 items-center">
-          <div className="lg:mb-0 sm:mb-3">
+        <div className="lg:flex md:block md:gap-4 lg:gap-4  items-center">
+          <div className="lg:mb-0 mb-3">
             <Image
               src="/../public/people.png"
               width={500}
-              height={100}
+              height={500}
               alt="alt"
             />
           </div>
-          <div className="">
+          <div className="flex-1">
             <h1 className="text-primary text-lg -mt-2">PROGRAMMES</h1>
             <p className="text-3xl font-semibold mt-1">Social Pillar</p>
-            <p className="text-lg mt-1 leading-8 mb-2">
+            <p className="text-lg mt-1 lg:leading-8 sm:leading mb-2">
               AKRSP has built a strong foundation of people’s institutions,
               comprising more than 3700 Village and Women Organizations,
               majority of whom have come together to establish more than 60
@@ -29,8 +28,8 @@ const Alpha = () => {
             </button>
           </div>
         </div>
-        <div className="lg:grid lg:grid-cols-2 md:block lg:gap-2 md:gap-2 mt-8 items-center">
-          <div>
+        <div className="lg:flex md:block md:gap-4 lg:gap-4 items-center mt-10">
+          <div className="flex-1">
             <h1 className="text-primary text-lg -mt-1">PROGRAMMES</h1>
             <p className="text-3xl font-semibold mt-1 textback">
               Social Pillar
@@ -47,7 +46,7 @@ const Alpha = () => {
               Read More
             </button>
           </div>
-          <div className="lg:mt-0 sm:mt-3 md:mt-3 mt-3">
+          <div className="lg:mt-0 sm:mt-3 md:mt-3 mt-3 flex-1">
             <Image
               src="/../public/people.png"
               width={500}

@@ -6,6 +6,7 @@ const data = {
     {
       total_num: "11",
       name: "Districts",
+      IsDone: true,
       icon: () => (
         <svg
           width="28"
@@ -24,6 +25,8 @@ const data = {
     {
       total_num: "198409",
       name: "Organised Households",
+      IsDone: false,
+
       icon: () => (
         <svg
           width="28"
@@ -42,6 +45,7 @@ const data = {
     {
       total_num: "2928",
       name: "Village Organization",
+      IsDone: false,
       icon: () => (
         <svg
           width="28"
@@ -60,6 +64,7 @@ const data = {
     {
       total_num: "2117",
       name: "Women Organization",
+      IsDone: false,
       icon: () => (
         <svg
           width="28"
@@ -102,6 +107,7 @@ const data = {
     {
       total_num: "75",
       name: "Local Support Organization",
+      IsDone: false,
       icon: () => (
         <svg
           width="28"
@@ -122,18 +128,24 @@ const data = {
 
 const Alpha6 = () => {
   return (
-    <div className="py-10 px-2 overflow-hidden container sm:px-4 lg:px-10">
-      <div className="relative">
-        <div className="absolute left-2/2 -ml-0.5 w-0.5 h-screen bg-gray-600"></div>
-        <p className="text-3xl font-semibold">
+    <div className="max-w-6xl py-10 overflow-hidden container sm:px-4 lg:px-10">
+      <div>
+        <p className="text-3xl font-semibold mb-4">
           Where <span className="text-primary">AKRSP</span> Work
         </p>
+        <div className="absolute flex justify-center items-center -ml-4 w-px h-[26rem] mt-12 bg-primary rounded-full"></div>
       </div>
-      <div>
-        
+      <div className="">
         {data?.main?.map((item) => (
           <div key={item.name} className="px-3 py-5 flex items-center">
-            <div className="bg-svgbg border-1 rounded-full p-4">
+            <div className="bg-svgbg border-1 rounded-full p-4 relative">
+              <div
+                className={
+                  item.IsDone
+                    ? "absolute right-20 right-2 flex justify-center items-center w-3 h-3 bg-primary mt-2 rounded-full"
+                    : "absolute right-20  w-3 h-3 border-primary mt-2 border-2 rounded-full"
+                }
+              ></div>
               <item.icon />
             </div>
             <div className="ml-3">
@@ -144,12 +156,16 @@ const Alpha6 = () => {
             </div>
           </div>
         ))}
-        <div className="">
+        <div className="flex ">
           <Image src="/../public/map.png" alt="alt" width={500} height={100} />
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
 export default Alpha6;
+
+{
+  /* <div className="absolute left-5 flex items-center w-3 h-3 bg-primary mt-2 rounded-full"></div> */
+}
