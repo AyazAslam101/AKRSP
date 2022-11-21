@@ -6,20 +6,27 @@ import Alpha2 from "../components/Alpha/Alpha2";
 import Alpha3 from "../components/Alpha/Alpha3";
 import Alpha4 from "../components/Alpha/Alpha4";
 import Alpha5 from "../components/Alpha/Alpha5";
-import Alpha6 from "../components/Alpha/Alpha6";import Projects from '../components/Projects';
+import Alpha6 from "../components/Alpha/Alpha6";
+import Projects from '../components/Projects';
+import RecentNews from "../components/RecentNews";
+import Slider from "../components/Slider";
 
 
-export default function Home() {
+
+export default function Home() { 
   return (
     <>
       <Layout>
-        <Alpha2 />
+        <Alpha2 /> 
         <Alpha3 />
         <Alpha />
         <Alpha5 />
         <Alpha4 />
-        <Alpha6 />
+        <Alpha6 /> 
+        <RecentNews />
+        <Slider />
       </Layout>
+      
     </>
   );
 }
