@@ -7,13 +7,13 @@ export interface ChipProps {
 }
 export const Chip: FC<ChipProps> = ({ children, onClick, isActive, value }) => {
   return (
-    <span
-      className={`px-4 py-2 rounded-3xl cursor-pointer ${isActive ? 'bg-green-500 text-white' : 'bg-green-300 text-gray-900'}`}
+    <button
+      className={`px-8 py-3 rounded-full cursor-pointer ${isActive ? 'bg-primary flex items-center justify-center  text-white' : 'bg-playerbg text-black'}`}
       onClick={() => {
         onClick(value);
       }}
     >
       {children}
-    </span>
+    </button>
   );
 };

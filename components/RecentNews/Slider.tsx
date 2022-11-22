@@ -42,7 +42,7 @@ function Slider() {
       readMore: "readmore",
     },
     {
-      img: '/../public/project4.png"',
+      img: "/../public/project3.png",
       name: "Naeem Hassan",
       description: "Earthly matters: A bright future",
       readMore: "readmore",
@@ -52,7 +52,7 @@ function Slider() {
     <div className="container mx-auto">
       <div>
         <h2 className="text-4xl font-bold">Recent News</h2>
-        <div className="flex  space-x-5">
+        <div className="flex space-x-8 mt-6 items-center">
           {data.map((item, index) => {
             return (
               <Chip
@@ -68,7 +68,7 @@ function Slider() {
             );
           })}
         </div>
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-3 mt-6">
           {Slider.map((Slider, index) => {
             const { img, description, name, readMore } = Slider;
             return (
