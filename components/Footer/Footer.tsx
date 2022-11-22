@@ -48,6 +48,17 @@ const navigation = {
       ],
     },
     {
+      name: "Contact Us",
+      href: "/contact-us",
+      lists: [
+        { name: "+92 (51)2801161-4", href: "/" },
+        { name: "Info@akrsp.org.pk", href: "/" },
+        { name: "Webmail", href: "/" },
+        { name: "LSO PORTAL", href: "/" },
+        { name: "Contact Us", href: "/" },
+      ],
+    },
+    {
       name: "Opportunities",
       href: "/opportunities",
       lists: [
@@ -68,17 +79,6 @@ const navigation = {
         },
       ],
     },
-    {
-      name: "Contact Us",
-      href: "/contact-us",
-      lists: [
-        { name: "+92 (51)2801161-4", href: "/" },
-        { name: "Info@akrsp.org.pk", href: "/" },
-        { name: "Webmail", href: "/" },
-        { name: "LSO PORTAL", href: "/" },
-        { name: "Contact Us", href: "/" },
-      ],
-    },
   ],
   lists: [
     { name: "Who We Are", href: "/Programmes" },
@@ -97,32 +97,32 @@ const navigation = {
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t-2">
-      <div className="max-w-7xl mx-auto py-10 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3  lg:gap-3 md:gap-6 sm:gap-3 gap-2 ">
+    <footer className="bg-white border-t-2 mx-auto">
+      <div className=" py-10 px-8 overflow-hidden sm:px-6 lg:px-8">
+        <div className="grid grid-cols-2 gap-1 lg:grid-cols-5 justify-between md:grid-cols-4 sm:grid-cols-3 container mx-auto">
           {navigation?.links?.map((item, key) => (
             <div key={key} className="px-1 py-2">
               <a
                 href={item?.href}
-                className="font-medium text-primary font-medium text-xl"
+                className="font-medium text-primary font-medium text-2xl"
               >
                 {item?.name}
               </a>
               <div className="mt-4">
                 {item?.lists?.map((list, key) => (
-                  <div>
-                    <p className="p-2 -ml-2 font-sans font-normal text-md">
+                  <div key={key}>
+                    <p className="p-2 -ml-2 font-sans font-normal text-xl">
                       <a href={list?.href}>{list?.name}</a>
                     </p>
                     <div>
-                      {list?.menu?.map((items: any) => (
-                        <div>
-                          <p className="font-medium text-primary font-medium text-xl mt-2">
+                      {list?.menu?.map((items: any,key:any) => (
+                        <div key={key}>
+                          <p className="font-medium text-primary font-medium text-2xl mt-2">
                             {items?.name}
                           </p>
                           <div>
-                            {items?.order?.map((items: any) => (
-                              <div>
+                            {items?.order?.map((items: any, key:any) => (
+                              <div key={key}>
                                 <p className="p-2 -ml-2 font-sans font-normal text-md">
                                   {items?.name}
                                 </p>
@@ -139,18 +139,18 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="block lg:grid lg:grid-cols-2 md:grid-cols-2 sm:block justify-center items-baseline lg:justify-evenly bg-primary mb-8">
+      <div className="block lg:grid lg:grid-cols-2 md:grid-cols-2 sm:block justify-center items-baseline bg-primary mb-8">
         <div>
-          <p className="text-center text-sm text-white">
+          <p className="text-center text-lg text-white">
             &copy;{new Date().getFullYear()} Aga Khan Rural Support Programme.
             Developer: AKRSP IT Department.
           </p>
         </div>
         <div className="flex justify-center mx-auto text-center">
-          {navigation.main.map((item) => (
-            <div key={item.name} className="px-1 py-2 ">
-              <a href={item.href} className="text-sm text-white">
-                {item.name} |
+          {navigation.main.map((item:any , key:any) => (
+            <div key={key} className="px-1 py-2 flex">
+              <a href={item.href} className="text-lg text-white">
+                {item.name}<span className="sm:invisible invisible md:invisible lg:visible ml-1">|</span>
               </a>
             </div>
           ))}

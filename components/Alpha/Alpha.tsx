@@ -128,36 +128,38 @@ const data = {
 
 const Alpha = () => {
   return (
-    <div className="max-w-6xl py-10 overflow-hidden container sm:px-4 lg:px-10">
-      <div>
-        <p className="text-3xl font-semibold mb-4">
+    <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
+      <div className="relative">
+        <p className="text-4xl font-semibold mb-4">
           Where <span className="text-primary">AKRSP</span> Work
         </p>
         <div className="absolute flex justify-center items-center -ml-4 w-px h-[26rem] mt-12 bg-primary rounded-full"></div>
       </div>
-      <div className="">
-        {data?.main?.map((item) => (
-          <div key={item.name} className="px-3 py-5 flex items-center">
-            <div className="bg-svgbg border-1 rounded-full p-4 relative">
-              <div
-                className={
-                  item.IsDone
-                    ? "absolute right-20 right-2 flex justify-center items-center w-3 h-3 bg-primary mt-2 rounded-full"
-                    : "absolute right-20  w-3 h-3 border-primary mt-2 border-2 rounded-full"
-                }
-              ></div>
-              <item.icon />
+      <div className="flex md:flex-row flex-col">
+        <div className="flex-">
+          {data?.main?.map((item, key) => (
+            <div key={key} className="px-3 py-5 flex items-center">
+              <div className="bg-svgbg border-1 rounded-full p-4 relative">
+                <div
+                  className={
+                    item.IsDone
+                      ? "absolute right-20 flex justify-center items-center w-3 h-3 bg-primary mt-2 rounded-full"
+                      : "absolute right-20  w-3 h-3 border-primary mt-2 border-2 rounded-full bg-white"
+                  }
+                ></div>
+                <item.icon />
+              </div>
+              <div className="ml-3">
+                <p className="text-3xl text-primary font-semibold tracking-wide">
+                  {item?.total_num}
+                </p>
+                <p className="text-lg"> {item?.name}</p>
+              </div>
             </div>
-            <div className="ml-3">
-              <p className="text-3xl text-primary font-semibold tracking-wide">
-                {item?.total_num}
-              </p>
-              <p className="text-lg"> {item?.name}</p>
-            </div>
-          </div>
-        ))}
-        <div className="flex ">
-          <Image src="/../public/map.png" alt="alt" width={500} height={100} />
+          ))}
+        </div>
+        <div className="mx-auto -mt-12">
+          <Image src="/../public/map.png" alt="alt" width={900} height={100} />
         </div>
       </div>
     </div>

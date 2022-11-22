@@ -6,11 +6,11 @@ const navigation = {
   main: [
     { name: "About us", href: "/terms-and-conditions" },
     { name: "Programmes", href: "/privacy-policy" },
-    { name: "Projects", href: "/donors" },
-    { name: "Opportunities", href: "/donors" },
-    { name: "Gallery", href: "/donors" },
-    { name: "Communications", href: "/donors" },
-    { name: "News", href: "/donors" },
+    { name: "Projects", href: "/Projects" },
+    { name: "Opportunities", href: "/Opportunities" },
+    { name: "Gallery", href: "/Gallery" },
+    { name: "Communications", href: "/Communications" },
+    { name: "News", href: "/News" },
   ],
 };
 
@@ -18,15 +18,15 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="mx-auto sm:px-4 lg:px-8 m-1">
-        <div className="flex-shrink-0 lg:flex sm:block justify-enter items-baseline justify-around">
+      <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
+        <div className="flex-shrink-0 lg:flex sm:block justify-center container items-baseline justify-between">
           <div className="px-2 ml-2">
             <a href="y">
               <Image
                 src={Logo}
                 alt="Picture of the author"
-                width={80}
-                height={50}
+                width={100}
+                height={60}
               />
             </a>
           </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <div key={item.name} className="px-2 md:px-1 py-2 md:py-1">
                   <a
                     // href={item.href}
-                    className="font-medium text-normal text-secondary p-3"
+                    className="font-bold text-xl text-secondary p-3"
                   >
                     {item.name}
                   </a>

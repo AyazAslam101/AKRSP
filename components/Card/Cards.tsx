@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
 
-function Cards({ img, title, description, readMore }: any) {
+function Cards({ img, title, description, readMore,}: any) {
   return (
-    <div className="container overflow-hidden shadow rounded">
+    <div className="container overflow-hidden rounded h-full">
       <div className="mb-2">
         <Image src={img} alt="alt" width={50} height={10} layout="responsive" />
       </div>
       <div className="mt-2 px-2">
-        <h6 className="font-bold mb-2 text-lg">{title}</h6>
-        <p className="">{description}</p>
-        <button className="mt-2 py-2 rounded text-primary flex items-center">
+        <h6 className="font-bold mb-2 text-xl">{title}</h6>
+        <p className="text-lg">{description}</p>
+        <button className="mt-2 text-lg py-2 rounded text-primary flex items-center">
           {readMore}
           <svg
             width="10"

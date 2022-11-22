@@ -7,7 +7,6 @@ import Hero from "../components/Hero/Hero";
 import Gallery from "../components/Gallery/Gallery";
 import Documentries from "../components/Documentries/Documentries";
 import Alpha from "../components/Alpha/Alpha";
-import Cards from "../components/Card/Cards";
 import Projects from "../components/Card/Projects";
 
 export default function Home() {

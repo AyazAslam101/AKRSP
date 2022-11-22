@@ -34,18 +34,18 @@ function Projects() {
     
   ];
   return (
-    <div className="py-10 px-2 overflow-hidden container sm:px-4 lg:px-10">
+    <div className="py-5 mx-auto overflow-hidden sm:px:2 container">
       <div className="flex mt-4 items-center justify-between">
-        <div className="mb-5">
+        <div className="mb-5 lg:ml-5">
           <button className="bg-primary px-5 py-2 rounded text-white mr-2">
             ONGOING
           </button>
-          <button className="bg-primary px-5 py-2 rounded text-white">
+          <button className="bg-white border-primary border-2 px-5 py-2 rounded text-primary mt-3">
             ACCOMPLISHED
           </button>
         </div>
-        <div className="mb-5">
-          <button className="border-primary border-solid border-2 py-1 px-2 rounded ">
+        <div className="mb-5 flex lg:mr-5">
+          <button className="border-primary border-solid border-2 py-1 px-2 rounded">
             <svg
               width="10"
               height="12"
@@ -80,17 +80,18 @@ function Projects() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-0 md:grid-cols-2 sm:grid-cols-2 gap-4">
         {projects.map((project, index) => {
           const { img, description, title, readMore } = project;
           return (
-            <Cards
-              key={index}
+            <div key={index}>
+              <Cards
               img={img}
               description={description}
               title={title}
               readMore={readMore}
             />
+            </div>
           );
         })}
       </div>

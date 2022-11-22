@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 1530px) {
+  .container {
+    max-width: 90%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-

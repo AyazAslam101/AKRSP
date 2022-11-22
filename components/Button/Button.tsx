@@ -27,8 +27,8 @@ const Button = (props: {
             Close
           </button>
 
-          {navigation.main.map((item: any) => (
-            <div key={item.name} className="px-5 py-2 bg-tertiary ">
+          {navigation.main.map((item: any , key : any) => (
+            <div key={key} className="px-5 py-2 bg-tertiary ">
               <a
                 href={item.href}
                 className="font-medium text-normal text-secondary p-5"
