@@ -10,7 +10,7 @@ const Programmes = () => {
               width={750}
               height={10}
               alt="alt"
-            /> 
+            />
           </div>
           <div className="lg:max-w-2xl">
             <h1 className="text-primary font-medium text-3xl">PROGRAMMES</h1>
@@ -33,12 +33,13 @@ const Programmes = () => {
             <h1 className="text-primary font-medium text-2xl">PROGRAMMES</h1>
             <p className="text-4xl font-semibold mt-3">Economic Pillar</p>
             <p className="text-2xl tracking-wider leading-8 lg:pb-8 lg:pt-4 mb-2">
-              AKRSP has built a strong foundation of people’s  institutions,
-              comprising more than 3700 Village and Women Organizations,
-              majority of whom have come together to establish more than 60
-              Local Support Organizations as their representative institutions.
-              These LSOs take on a multi-sector agenda in partnership with a
-              wide array of partners including the local government departments.
+              Sustained improvements in the quality of life GBC’s population
+              hinges upon inclusive economic growth and shared employment
+              opportunities. AKRSP’s efforts in developing economic
+              infrastructure (e.g. roads, irrigation and land development
+              projects), promoting agricultural productivity, and improving
+              farming skills have been instrumental in this regard by increasing
+              farm surplus.
             </p>
             <button className="bg-primary px-4 py-3 rounded text-white text-lg">
               Read More
@@ -46,8 +47,8 @@ const Programmes = () => {
           </div>
           <div className="lg:mt-0 sm:mt-3 md:mt-3 mt-3 flex-1">
             <Image
-              src="/../public/people.png"
-              width={680}
+              src="/../public/image13.png"
+              width={750}
               height={100}
               alt="alt"
             />

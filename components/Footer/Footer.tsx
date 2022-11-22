@@ -123,7 +123,7 @@ const Footer = () => {
                           <div>
                             {items?.order?.map((items: any, key:any) => (
                               <div key={key}>
-                                <p className="p-2 -ml-2 font-sans font-normal text-md">
+                                <p className="p-2 -ml-2 font-sans font-normal text-xl">
                                   {items?.name}
                                 </p>
                               </div>

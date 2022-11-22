@@ -38,7 +38,8 @@ module.exports = {
         playerbg: "#DBF0E4",
       },
       height: {
-        128: "26rem",
+        '128': "26rem",
+        '132': '32rem',
       },
     },
   },

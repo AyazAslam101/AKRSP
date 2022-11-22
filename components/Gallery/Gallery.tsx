@@ -4,8 +4,8 @@ const Gallery = () => {
   return (
     <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
       <div className="text-center mb-4">
-        <h2 className="text-3xl leading-10 font-extrabold">Media Gallery</h2>
-        <h4 className="text-2xl leading-10 font-semibold mt-2">
+        <h2 className="text-5xl leading-10 font-extrabold">Media Gallery</h2>
+        <h4 className="text-3xl leading-10 font-semibold mt-5">
           Enhancing Employability and Leadership for Youth (EELY)
         </h4>
         <p className="text-2xl tracking-wide leading-8 container lg:px-32 px-4 py-4 mx-auto text-center">
