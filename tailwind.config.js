@@ -36,6 +36,7 @@ module.exports = {
         bgprimary: "#F9F9F9",
         svgbg: "#F0F9F4",
         playerbg: "#DBF0E4",
+        lblack:"#353535"
       },
       height: {
         '128': "26rem",

@@ -8,7 +8,7 @@ export interface ChipProps {
 export const Chip: FC<ChipProps> = ({ children, onClick, isActive, value }) => {
   return (
     <button
-      className={`px-8 py-3 rounded-full cursor-pointer ${isActive ? 'bg-primary flex items-center justify-center  text-white' : 'bg-playerbg text-black'}`}
+      className={`px-8 py-3 rounded-full cursor-pointer ${isActive ? 'bg-primary flex items-center justify-center text-white' : 'bg-playerbg text-black'}`}
       onClick={() => {
         onClick(value);
       }}
