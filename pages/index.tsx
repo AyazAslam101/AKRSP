@@ -8,6 +8,7 @@ import Gallery from "../components/Gallery/Gallery";
 import Documentries from "../components/Documentries/Documentries";
 import Alpha from "../components/Alpha/Alpha";
 import Projects from "../components/Card/Projects";
+import Slider from "../components/RecentNews/Slider";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Header />
         <Hero />
         <Programmes />
+        <Slider/>
         <Projects/>
         <Documentries />
         <Gallery />
