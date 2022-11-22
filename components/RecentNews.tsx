@@ -11,7 +11,7 @@ function RecentNews({ img, name, description, }: any) {
         <div className="mt-3">
           <h6 className="font-bold mb-3 text-lg">{name}</h6>
           <p className="">{description}</p>
-          <button className="mt-3 px-3 py-3 rounded">
+          <button className="mt-3 px-3 py-3 ">
           </button> 
         </div>
       </div>
