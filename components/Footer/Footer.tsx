@@ -139,7 +139,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="block lg:grid lg:grid-cols-2 md:grid-cols-2 sm:block justify-center items-baseline bg-primary mb-8">
+      <div className="block lg:grid lg:grid-cols-2 md:grid-cols-2 sm:block justify-center items-baseline bg-primary mb-2">
         <div>
           <p className="text-center text-lg text-white">
             &copy;{new Date().getFullYear()} Aga Khan Rural Support Programme.

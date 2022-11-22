@@ -133,11 +133,10 @@ const Alpha = () => {
         <p className="text-5xl font-semibold mb-4">
           Where <span className="text-primary">AKRSP</span> Work
         </p>
-       </div>
-  <div className="relative">
-  <div className="absolute flex justify-center items-center -ml-0 w-px md:h-[26rem] h-[32rem] sm:h-[32rem] md:visible invisible   lg:mt-12 bg-primary rounded-full"></div>
-
-  </div>
+      </div>
+      <div className="relative">
+        <div className="absolute flex justify-center items-center -ml-0 w-px  xl:h-[26rem] lg:h-[32rem]  lg:visible md:invisible sm:invisible invisible lg:mt-12 bg-primary rounded-full"></div>
+      </div>
       <div className="flex md:flex-row flex-col">
         <div className="flex-">
           {data?.main?.map((item, key) => (
@@ -146,8 +145,8 @@ const Alpha = () => {
                 <div
                   className={
                     item.IsDone
-                      ? "absolute right-24 flex justify-center items-center lg:w-3 lg:h-3 md:visible invisible  bg-primary mt-2 rounded-full"
-                      : "absolute right-24 lg:w-3 lg:h-3 w-3 h-3 md:visible invisible  border-primary mt-2 border-2 rounded-full bg-white"
+                      ? "absolute right-24 flex justify-center items-center lg:w-3 lg:h-3 lg:visible md:invisible sm:invisible invisible bg-primary mt-2 rounded-full"
+                      : "absolute right-24 lg:w-3 lg:w-3 lg:h-3 lg:visible md:invisible sm:invisible invisible  border-primary mt-2 border-2 rounded-full bg-white"
                   }
                 ></div>
                 <item.icon />

@@ -27,41 +27,37 @@ const Header = () => {
               <div className="grid grid-cols-[350px_500px]">
                 <div className="">
                   <Image
-                    src="/../public/image1.png"
+                    src="/../public/Image1.png"
                     width={280}
                     height={300}
                     alt="alt"
-                    layout="fixed"
                   />
                 </div>
                 <div className="">
                   <Image
-                    src="/../public/image2.png"
+                    src="/../public/Image2.png"
                     alt="alt"
                     width={300}
                     height={100}
                     className="relative right-14 top-16"
-                    layout="fixed"
                   />
                 </div>
               </div>
               <div className="grid grid-cols-[350px_500px]">
                 <div className="px-1">
                   <Image
-                    src="/../public/image3.png"
+                    src="/../public/Image3.png"
                     width={220}
                     height={100}
                     alt="alt"
-                    layout="fixed"
                   />
                 </div>{" "}
                 <div>
                   <Image
-                    src="/../public/image4.png"
+                    src="/../public/Image4.png"
                     width={350}
                     height={100}
                     alt="alt"
-                    layout="fixed"
                     className="relative right-28 top-0"
                   />
                 </div>
