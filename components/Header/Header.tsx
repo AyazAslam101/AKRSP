@@ -1,10 +1,11 @@
 import Image from "next/image";
+import SideBar from "../SideBar/SideBar";
 
 const Header = () => {
   return (
     <>
       <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
-        <div className="lg:grid lg:grid-cols-2 sm:block md:block block gap-2 lg:gap-4">
+        <div className="lg:grid lg:grid-cols-2 sm:block md:block block gap-2 lg:gap-4 relative">
           <div className="pt-32">
             <h2 className="text-6xl font-bold leading-tight text-black mr-2">
               Aga Khan Rural Support Programme <br />
@@ -29,11 +30,11 @@ const Header = () => {
                   <Image
                     src="/../public/Image1.png"
                     width={280}
-                    height={300}
+                    height={280}
                     alt="alt"
                   />
                 </div>
-                <div className="cursor-pointer">
+                <div className="cursor-pointer mt-2">
                   <Image
                     src="/../public/Image2.png"
                     alt="alt"
@@ -64,6 +65,9 @@ const Header = () => {
               </div>
             </div>
           </div>
+         <div className="absolute -right-2 top-60">
+         <SideBar />
+         </div>
         </div>
       </div>
     </>

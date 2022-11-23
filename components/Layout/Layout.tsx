@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Layout = (props: { children: any }) => {
   return (
-    <div className="">
+    <div>
       <Navbar />
       <div className="container sm:container lg:container md:container">
       {props.children}
