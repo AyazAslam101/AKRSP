@@ -31,7 +31,6 @@ function Projects() {
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
       readMore: "Real more",
     },
-    
   ];
   return (
     <div className="py-5 mx-auto overflow-hidden sm:px:2 container">
@@ -86,11 +85,11 @@ function Projects() {
           return (
             <div key={index}>
               <Cards
-              img={img}
-              description={description}
-              title={title}
-              readMore={readMore}
-            />
+                img={img}
+                description={description}
+                title={title}
+                readMore={readMore}
+              />
             </div>
           );
         })}

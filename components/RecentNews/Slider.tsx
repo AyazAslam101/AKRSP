@@ -31,26 +31,23 @@ function Slider() {
   const Slider = [
     {
       img: "/../public/Rectangle1.png",
-      icon:"/../public/user.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
-      calender:"/../public/calendar.png",
+
       description: "Earthly matters: A bright future",
     },
     {
       img: "/../public/Rectangle2.png",
-      icon:"/../public/user.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
-      calender:"/../public/calendar.png",
+
       description: "Sadpara Development Project",
     },
     {
       img: "/../public/Rectangle3.png",
-      icon:"/../public/user.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
-      calender:"/../public/calendar.png",
+
       description: "Community mobilisation paying off in Chitral",
     },
   ];
@@ -79,12 +76,10 @@ function Slider() {
             return (
               <RecentNews
                 key={index}
-                icon={slider.icon}
                 img={slider.img}
                 date={slider.date}
                 description={slider.description}
                 name={slider.name}
-                calendar={slider.calender}
               ></RecentNews>
             );
           })}

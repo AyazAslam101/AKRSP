@@ -23,9 +23,9 @@ const Header = () => {
             </p>
           </div>
           <div className="container py-2 mx-auto">
-            <div className="max-w-3xl flex flex-col gap-2 ">
+            <div className="max-w-3xl flex flex-col gap-2">
               <div className="grid grid-cols-[350px_500px]">
-                <div className="">
+                <div className="cursor-pointer">
                   <Image
                     src="/../public/Image1.png"
                     width={280}
@@ -33,7 +33,7 @@ const Header = () => {
                     alt="alt"
                   />
                 </div>
-                <div className="">
+                <div className="cursor-pointer">
                   <Image
                     src="/../public/Image2.png"
                     alt="alt"
@@ -44,7 +44,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="grid grid-cols-[350px_500px]">
-                <div className="px-1">
+                <div className="px-1  cursor-pointer">
                   <Image
                     src="/../public/Image3.png"
                     width={220}
@@ -52,7 +52,7 @@ const Header = () => {
                     alt="alt"
                   />
                 </div>{" "}
-                <div>
+                <div className="cursor-pointer">
                   <Image
                     src="/../public/Image4.png"
                     width={350}

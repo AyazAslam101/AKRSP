@@ -4,7 +4,7 @@ const Programmes = () => {
     <>
       <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
         <div className="lg:grid grid-cols-2 md:block md:gap-4 lg:gap-4  items-center ">
-          <div className="lg:mb-0 mb-3">
+          <div className="lg:mb-0 mb-3 cursor-pointer">
             <Image
               src="/../public/people.png"
               width={750}
@@ -45,7 +45,7 @@ const Programmes = () => {
               Read More
             </button>
           </div>
-          <div className="lg:mt-0 sm:mt-3 md:mt-3 mt-3 lg:ml-2">
+          <div className="lg:mt-0 sm:mt-3 md:mt-3 mt-3 lg:ml-2 cursor-pointer">
             <Image
               src="/../public/image13.png"
               width={750}

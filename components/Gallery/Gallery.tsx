@@ -18,7 +18,7 @@ const Gallery = () => {
         </p>
       </div>
       <div>
-        <div className="grid grid-cols-4 sm:gap-1 md:gap-2 lg:gap-2">
+        <div className="grid grid-cols-4 sm:gap-1 md:gap-2 lg:gap-2 cursor-pointer">
           <div>
             <Image
               src="/../public/image5.png"

@@ -160,7 +160,7 @@ const Alpha = () => {
             </div>
           ))}
         </div>
-        <div className="mx-auto lg:-mt-6">
+        <div className="mx-auto lg:-mt-6 cursor-pointer">
           <Image src="/../public/map.png" alt="alt" width={900} height={100} />
         </div>
       </div>
