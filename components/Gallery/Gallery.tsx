@@ -8,7 +8,7 @@ const Gallery = () => {
         <h4 className="text-3xl leading-10 font-semibold mt-5">
           Enhancing Employability and Leadership for Youth (EELY)
         </h4>
-        <p className="text-2xl tracking-wide leading-8 container lg:px-32 px-4 py-4 mx-auto text-center">
+        <p className="text-2xl tracking-wide leading-8 container lg:px-24 px-4 py-4 mx-auto text-center">
           Funded by: foreign affairs, trafe and development canada (DFATD) and
           the aga khan foundation, canada (AKFC) project period: 6 years (march
           2011-march 2017) geographic focus: all districts of gilgit-baltistan

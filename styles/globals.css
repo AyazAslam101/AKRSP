@@ -6,12 +6,19 @@
 
 @media (min-width: 1530px) {
   .container {
-    max-width: 90%;
+    max-width: 92%;
     margin-left: auto!important;
     margin-right: auto!important;
   }
 }
-
+@media (min-width: 1530px) {
+  .programes-container
+  {
+    max-width: 89%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+}
 html,
 body {
   padding: 0;

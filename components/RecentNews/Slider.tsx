@@ -52,8 +52,8 @@ function Slider() {
     },
   ];
   return (
-    <div className="container mx-auto">
-      <div>
+    <div className="container">
+      <div className="lg:ml-6">
         <h2 className="text-4xl font-bold">Recent News</h2>
         <div className="lg:flex grid md:grid-cols-4 grid-cols-2 space-x-4 mt-6 items-center text-xl">
           {data.map((item, index) => {
@@ -71,19 +71,19 @@ function Slider() {
             );
           })}
         </div>
-        <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-0 md:grid-cols-2 sm:grid-cols-2 gap-4 mt-6">
-          {Slider.map((slider, index) => {
-            return (
-              <RecentNews
-                key={index}
-                img={slider.img}
-                date={slider.date}
-                description={slider.description}
-                name={slider.name}
-              ></RecentNews>
-            );
-          })}
-        </div>
+      </div>
+      <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-0 md:grid-cols-2 sm:grid-cols-2 gap-4 mt-6">
+        {Slider.map((slider, index) => {
+          return (
+            <RecentNews
+              key={index}
+              img={slider.img}
+              date={slider.date}
+              description={slider.description}
+              name={slider.name}
+            ></RecentNews>
+          );
+        })}
       </div>
     </div>
   );
