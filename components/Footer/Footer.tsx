@@ -115,13 +115,13 @@ const Footer = () => {
                       <a href={list?.href}>{list?.name}</a>
                     </p>
                     <div>
-                      {list?.menu?.map((items: any,key:any) => (
+                      {list?.menu?.map((items: any, key: any) => (
                         <div key={key}>
                           <p className="font-medium text-primary font-medium text-2xl mt-2">
                             {items?.name}
                           </p>
                           <div>
-                            {items?.order?.map((items: any, key:any) => (
+                            {items?.order?.map((items: any, key: any) => (
                               <div key={key}>
                                 <p className="p-2 -ml-2 font-sans font-normal text-xl">
                                   {items?.name}
@@ -147,10 +147,13 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex justify-center mx-auto text-center">
-          {navigation.main.map((item:any , key:any) => (
+          {navigation.main.map((item: any, key: any) => (
             <div key={key} className="px-1 py-2 flex">
               <a href={item.href} className="text-lg text-white">
-                {item.name}<span className="sm:invisible invisible md:invisible lg:visible ml-1">|</span>
+                {item.name}
+                <span className="sm:invisible invisible md:invisible lg:visible ml-1">
+                  |
+                </span>
               </a>
             </div>
           ))}

@@ -4,7 +4,7 @@ import SideBar from "../SideBar/SideBar";
 const Header = () => {
   return (
     <>
-      <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
+      <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container sm:container lg:container md:container">
         <div className="lg:grid lg:grid-cols-2 sm:block md:block block gap-2 lg:gap-4 relative">
           <div className="pt-32">
             <h2 className="text-6xl font-bold leading-tight text-black mr-2">
@@ -65,10 +65,10 @@ const Header = () => {
               </div>
             </div>
           </div>
-         <div className="absolute -right-2 top-60">
+        </div>
+         <div className="fixed right-0 top-96">
          <SideBar />
          </div>
-        </div>
       </div>
     </>
   );
