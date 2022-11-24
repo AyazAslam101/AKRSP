@@ -66,7 +66,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-         <div className="fixed right-0 top-96">
+         <div className="fixed right-0 top-96 lg:block hidden">
          <SideBar />
          </div>
       </div>

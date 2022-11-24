@@ -15,7 +15,7 @@ const Programmes = () => {
           <div className="lg:ml-4">
             <h1 className="text-primary font-medium text-3xl">PROGRAMMES</h1>
             <p className="text-4xl font-semibold mt-3">Social Pillar</p>
-            <p className="lg:text-2xl tracking-wide lg:pb-6 lg:pt-4 mb-1">
+            <p className="text-2xl tracking-wide  lg:pb-6 lg:pt-4 mb-1">
               AKRSP has built a strong foundation of people’s institutions
               comprising more than 3700 Village and Women Organizations,
               majority of whom have come together to establish more than 60

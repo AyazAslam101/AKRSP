@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="bg-bgprimary">
         <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2">
           <div className="flex-shrink-0 lg:flex sm:block justify-center container items-baseline justify-evenly">
-            <div className="-ml-16">
+            <div className="lg:-ml-16">
               <a href="">
                 <Image
                   src={Logo}
