@@ -19,10 +19,10 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-bgprimary">
-        <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
-          <div className="flex-shrink-0 lg:flex sm:block justify-center container items-baseline justify-between">
-            <div className="px-2 ml-2">
-              <a href="y">
+        <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2">
+          <div className="flex-shrink-0 lg:flex sm:block justify-center container items-baseline justify-evenly">
+            <div className="-ml-16">
+              <a href="">
                 <Image
                   src={Logo}
                   alt="Picture of the author"
@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className="lg:block lg:block hidden">
               <div className="flex">
                 {navigation.main.map((item) => (
-                  <div key={item.name} className="px-2 md:px-1 py-2 md:py-1">
+                  <div key={item.name} className="px-1 md:px-1 py-2 md:py-1">
                     <a
                       // href={item.href}
                       className="font-medium text-xl text-secondary p-3 cursor-pointer"
