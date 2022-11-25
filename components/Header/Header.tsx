@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SideBar from "../SideBar/SideBar";
+import Image1 from '../public/Image1.png'
 
 const Header = () => {
   return (
@@ -28,7 +29,7 @@ const Header = () => {
               <div className="grid grid-cols-[350px_600px]">
                 <div className="cursor-pointer">
                   <Image
-                    src="/../public/Image1.png"
+                    src={Image1}
                     width={280}
                     height={280}
                     alt="alt"
