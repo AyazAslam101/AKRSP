@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SideBar from "../SideBar/SideBar";
 import Image1 from '../../public/Image1.png'
+import Image2 from '../../public/Image2.png'
 
 const Header = () => {
   return (
@@ -37,7 +38,7 @@ const Header = () => {
                 </div>
                 <div className="cursor-pointer mt-2">
                   <Image
-                    src="/../public/Image2.png"
+                    src={Image2}
                     alt="alt"
                     width={300}
                     height={100}
