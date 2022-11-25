@@ -22,8 +22,9 @@ const Header = () => {
               to improve the quality of life of the people of Gilgit Baltistan
               and Chitral (GBC). The overall goal of the organization is to
               improve the socio-economic conditions of the people of northern
-              Pakistan.
+              Pakistan
             </p>
+            <p>hello</p>
           </div>
           <div className="container">
             <div className="flex flex-col gap-3">
