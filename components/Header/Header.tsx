@@ -49,7 +49,7 @@ const Header = () => {
               <div className="grid grid-cols-[350px_700px]">
                 <div className="px-1  cursor-pointer">
                   <Image
-                    src="/../public/Image3.png"
+                    src="/Image3.png"
                     width={230}
                     height={100}
                     alt="alt"
@@ -57,7 +57,7 @@ const Header = () => {
                 </div>{" "}
                 <div className="cursor-pointer">
                   <Image
-                    src="/../public/Image4.png"
+                    src="/Image4.png"
                     width={350}
                     height={100}
                     alt="alt"
