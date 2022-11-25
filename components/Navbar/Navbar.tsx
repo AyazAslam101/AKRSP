@@ -36,7 +36,7 @@ const Navbar = () => {
                   <div key={item.name} className="px-2 md:px-1 py-2 md:py-1">
                     <a
                       // href={item.href}
-                      className="font-medium text-xl text-secondary p-5 cursor-pointer"
+                      className="font-medium text-xl text-secondary p-4 cursor-pointer"
                     >
                       {item.name}
                     </a>
