@@ -12,7 +12,7 @@ const Header = () => {
               <span className="text-primary font-bold leading-tight">
                 Pakistan
               </span>
-            </h2>
+            </h2> 
             <p className="py-2 font-medium text-3xl leading-10 mt-2">
               The Aga Khan Rural Support Programme (AKRSP) is a private,
               non-profit company, established by the Aga Khan Foundation in 1982

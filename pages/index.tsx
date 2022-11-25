@@ -18,8 +18,8 @@ export default function Home() {
         <Header />
         <Hero />
         <Programmes />
-        <Slider/>
         <Projects/>
+        <Slider/>
         <Documentries />
         <Gallery />
         <Alpha />
