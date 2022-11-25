@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Target } from "../Icons/svg";
 
 const data = {
   main: [
@@ -137,8 +138,8 @@ const Alpha = () => {
       <div className="relative">
         <div className="absolute flex justify-center items-center -ml-0 w-px  xl:h-[26rem] lg:h-[32rem]  lg:visible md:invisible sm:invisible invisible lg:mt-12 bg-primary rounded-full"></div>
       </div>
-      <div className="flex md:flex-row flex-col">
-        <div className="flex-">
+      <div className="lg:flex flex-col md:flex-row sm:flex-row flex-row">
+        <div>
           {data?.main?.map((item, key) => (
             <div key={key} className="px-3 py-5 flex items-center ml-8">
               <div className="bg-svgbg border-1 rounded-full p-4 relative">
@@ -160,7 +161,33 @@ const Alpha = () => {
             </div>
           ))}
         </div>
-        <div className="mx-auto lg:-mt-6 cursor-pointer">
+        <div className="mx-auto lg:-mt-6 cursor-pointer relative">
+          <div className="xl:block lg:blck md:hidden sm:hidden hidden">
+            <div className="absolute left-64 bottom-52">
+              <Target />
+            </div>
+            <div className="absolute left-52 ml-2 -mt-2 top-48">
+              <Target />
+            </div>
+            <div className="absolute left-96 top-64 mt-5 -ml-4">
+              <Target />
+            </div>
+            <div className="absolute left-80 ml-6 -mt-4 top-36">
+              <Target />
+            </div>
+            <div className="absolute right-96 top-64 mt-5 -ml-4">
+              <Target />
+            </div>
+            <div className="absolute right-72 top-40 mt-5 -ml-4">
+              <Target />
+            </div>
+            <div className="absolute right-80 top-52 mr-9">
+              <Target />
+            </div>
+            <div className="absolute right-80 bottom-56 mt-5 -ml-4">
+              <Target />
+            </div>
+          </div>
           <Image src="/../public/map.png" alt="alt" width={900} height={100} />
         </div>
       </div>
