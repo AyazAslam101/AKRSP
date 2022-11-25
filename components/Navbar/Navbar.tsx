@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="bg-bgprimary">
         <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2">
           <div className="flex-shrink-0 lg:flex sm:block justify-center container items-baseline justify-evenly">
-            <div className="lg:-ml-16">
+            <div className="lg:-ml-1">
               <a href="">
                 <Image
                   src="/Logo.png"
@@ -36,7 +36,7 @@ const Navbar = () => {
                   <div key={item.name} className="px-1 md:px-1 py-2 md:py-1">
                     <a
                       // href={item.href}
-                      className="font-medium text-xl text-secondary p-3 cursor-pointer"
+                      className="font-medium text-xl text-secondary p-4 cursor-pointer"
                     >
                       {item.name}
                     </a>
