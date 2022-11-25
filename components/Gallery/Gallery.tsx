@@ -21,7 +21,7 @@ const Gallery = () => {
         <div className="grid grid-cols-4 sm:gap-1 md:gap-2 lg:gap-2 cursor-pointer">
           <div>
             <Image
-              src="/../public/image5.png"
+              src="/image5.png"
               width={500}
               height={100}
               alt="akrsp"
@@ -29,7 +29,7 @@ const Gallery = () => {
           </div>
           <div >
             <Image
-              src="/../public/image6.png"
+              src="/image6.png"
               width={500}
               height={100}
               alt="akrsp"
@@ -37,7 +37,7 @@ const Gallery = () => {
           </div>
           <div>
             <Image
-              src="/../public/image9.png"
+              src="/image9.png"
               width={500}
               height={100}
               alt="akrsp"
@@ -45,7 +45,7 @@ const Gallery = () => {
           </div>
           <div>
             <Image
-              src="/../public/image11.png"
+              src="/image11.png"
               width={500}
               height={100}
               alt="akrsp"
@@ -53,7 +53,7 @@ const Gallery = () => {
           </div>
           <div>
             <Image
-              src="/../public/image7.png"
+              src="/image7.png"
               width={500}
               height={100}
               alt="akrsp"
@@ -63,7 +63,7 @@ const Gallery = () => {
 
           <div className="relative">
             <Image
-              src="/../public/image8.png"
+              src="/image8.png"
               width={500}
               height={100}
               alt="akrsp"
@@ -71,13 +71,13 @@ const Gallery = () => {
             />
           </div>
           <div>
-            <Image   src="/../public/image10.png"
+            <Image src="/image10.png"
               width={500}
               height={100} alt="akrsp" />
           </div>
           <div className="relative">
             <Image
-              src="/../public/image12.png"
+              src="/image12.png"
               width={500}
               height={100}
               alt="akrsp"
@@ -86,11 +86,11 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center -mt-12">
+      <div className="flex items-center justify-center mt-10">
         <button className="border-primary border-solid border-2 py-1 px-2 rounded ">
           <svg
-            width="10"
-            height="12"
+            width="14"
+            height="14"
             viewBox="0 0 8 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -105,8 +105,8 @@ const Gallery = () => {
         </button>
         <button className="border-primary border-solid border-2 py-1 px-2 rounded ml-3">
           <svg
-            width="10"
-            height="12"
+            width="14"
+            height="14"
             viewBox="0 0 8 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

@@ -1,11 +1,8 @@
 import React from "react";
-// import ReactPlayer from "react-player";
 import Image from "next/image";
 
 const Documentries = () => {
-  // const handleWatchComplete = (played: any) => {
-  //   console.log(played);
-  // };
+ 
   return (
     <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
       <div className="px-4">
@@ -14,7 +11,7 @@ const Documentries = () => {
       <div className="lg:flex items-center md:justify-center justify-center mx-auto flex-rows grid md:grid-cols-2 lg:justify-evenly">
         <div className="bg-playerbg px-3 py-10 ml-2 mr-2 mt-10 mb-10 cursor-pointer">
           <Image
-            src="/../public/imam.png"
+            src="/imam.png"
             width={450}
             height={100}
             alt="alt"
@@ -24,7 +21,7 @@ const Documentries = () => {
         </div>
         <div className="bg-playerbg px-3 py-10 ml-2 mr-2 mt-10 mb-10 cursor-pointer">
           <Image
-            src="/../public/image14.png"
+            src="/image14.png"
             width={450}
             height={100}
             alt="alt"
@@ -34,7 +31,7 @@ const Documentries = () => {
         </div>
         <div className="bg-playerbg px-3 py-10 ml-2 mr-2 mt-10 mb-10 cursor-pointer">
           <Image
-            src="/../public/image15.png"
+            src="/image15.png"
             width={450}
             height={100}
             alt="alt"

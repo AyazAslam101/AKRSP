@@ -1,7 +1,5 @@
 import Image from "next/image";
 import SideBar from "../SideBar/SideBar";
-import Image1 from '../../public/Image1.png'
-import Image2 from '../../public/Image2.png'
 
 const Header = () => {
   return (
@@ -24,37 +22,26 @@ const Header = () => {
               improve the socio-economic conditions of the people of northern
               Pakistan
             </p>
-            <p>hello</p>
           </div>
           <div className="container">
             <div className="flex flex-col gap-3">
               <div className="grid grid-cols-[350px_600px]">
                 <div className="cursor-pointer">
-                  <Image
-                    src={Image1}
-                    width={280}
-                    height={280}
-                    alt="alt"
-                  />
+                  <Image src="/Image1.png" width={280} height={280} alt="alt" />
                 </div>
                 <div className="cursor-pointer mt-2">
-                  <Image
-                    src={Image2}
-                    alt="alt"
+                <Image
+                    src="/Image2.png"
                     width={300}
                     height={100}
+                    alt="alt"
                     className="relative right-16 ml-2 top-16"
                   />
                 </div>
               </div>
               <div className="grid grid-cols-[350px_700px]">
                 <div className="px-1  cursor-pointer">
-                  <Image
-                    src="/Image3.png"
-                    width={230}
-                    height={100}
-                    alt="alt"
-                  />
+                  <Image src="/Image3.png" width={230} height={100} alt="alt" />
                 </div>{" "}
                 <div className="cursor-pointer">
                   <Image

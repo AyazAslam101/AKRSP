@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/Logo.png";
 import Button from "../Button/Button";
 const navigation = {
   main: [
@@ -24,7 +23,7 @@ const Navbar = () => {
             <div className="lg:-ml-16">
               <a href="">
                 <Image
-                  src={Logo}
+                  src="/Logo.png"
                   alt="Picture of the author"
                   width={100}
                   height={60}

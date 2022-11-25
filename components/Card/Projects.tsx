@@ -4,28 +4,28 @@ import Cards from "./Cards";
 function Projects() {
   const projects = [
     {
-      img: "/../public/project1.png",
+      img: "/project11.png",
       title: "Program for Poverty Reduction (PPR)",
       description:
         "PPR is a joint of initiative of PPAF and AKRP which has been developed in light of indigenous people framework to protect.  ",
       readMore: "Real more",
     },
     {
-      img: "/../public/project2.png",
+      img: "/project12.png",
       title: "Deepening Participatory Governance (DPG)",
       description:
         "This 48-month EU funded project, started in February 2014, is now approaching to its end and will be closed on December. ",
       readMore: "Real more",
     },
     {
-      img: "/../public/project4.png",
+      img: "/project13.png",
       title: "WES-II Project",
       description:
         "WES-II has been launched with a project period of three years (2015-2018) with extended grants from the Government of. ",
       readMore: "Real more",
     },
     {
-      img: "/../public/project3.png",
+      img: "/project14.png",
       title: "PEDO Micro-Hydro Project",
       description:
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
@@ -36,6 +36,7 @@ function Projects() {
     <div className="py-5 mx-auto overflow-hidden sm:px:2 container">
       <div className="flex mt-4 items-center justify-between">
         <div className="mb-5 lg:ml-5">
+          <h2 className="text-4xl font-bold mb-6">Projects</h2>
           <button className="bg-primary px-5 py-2 rounded text-white mr-2">
             ONGOING
           </button>

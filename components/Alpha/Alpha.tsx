@@ -188,7 +188,7 @@ const Alpha = () => {
               <Target />
             </div>
           </div>
-          <Image src="/../public/map.png" alt="alt" width={900} height={100} />
+          <Image src="/map.png" alt="alt" width={900} height={100} />
         </div>
       </div>
     </div>

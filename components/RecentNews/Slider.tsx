@@ -30,21 +30,21 @@ const data = [
 function Slider() {
   const Slider = [
     {
-      img: "/../public/Rectangle1.png",
+      img: "/Rectangle1.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
 
       description: "Earthly matters: A bright future",
     },
     {
-      img: "/../public/Rectangle2.png",
+      img: "/Rectangle2.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
 
       description: "Sadpara Development Project",
     },
     {
-      img: "/../public/Rectangle3.png",
+      img: "/Rectangle3.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
 

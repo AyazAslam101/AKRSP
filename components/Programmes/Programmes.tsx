@@ -6,7 +6,7 @@ const Programmes = () => {
         <div className="lg:grid lg:grid-cols-2 md:block sm:block block md:gap-4 lg:gap-4  items-center ">
           <div className="lg:mb-0 mb-3 cursor-pointer">
             <Image
-              src="/../public/people.png"
+              src="/people.png"
               width={700}
               height={10}
               alt="alt"
@@ -47,7 +47,7 @@ const Programmes = () => {
           </div>
           <div className="lg:mt-0 sm:mt-3 md:mt-3 mt-3 lg:ml-2 cursor-pointer">
             <Image
-              src="/../public/image13.png"
+              src="/image13.png"
               width={700}
               height={100}
               alt="alt"
