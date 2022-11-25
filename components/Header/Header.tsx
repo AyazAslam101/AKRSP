@@ -11,7 +11,6 @@ const Header = () => {
             <h2 className="text-6xl font-bold leading-tight text-black">
               Aga Khan Rural Support Programme <br />
               <span className="text-primary font-bold leading-tight">
-                Pakistan
               </span>
             </h2>
 
