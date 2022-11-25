@@ -12,9 +12,9 @@ const data = [
 const Hero = () => {
   return (
     <div className="py-2 px-6 container">
-      {data.map((item) => {
+      {data.map((item , index) => {
         return (
-          <div>
+          <div key={index} >
             <div className="bg-primary p-8 py-16 rounded-md">
               <div className="flex items-center">
                 <p className="mb-4 font-medium text-xl text-white -mt-4">
