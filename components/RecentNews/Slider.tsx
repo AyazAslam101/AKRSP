@@ -52,8 +52,8 @@ function Slider() {
     },
   ];
   return (
-    <div className="container">
-      <div className="lg:ml-5">
+    <div className="container mb-8">
+      <div className="xl:ml-5 lg:ml-0 md:ml-0 sm:ml-0 ml-0">
         <h2 className="text-4xl font-bold">Recent News</h2>
         <div className="lg:flex grid md:grid-cols-4 grid-cols-2 mt-6 items-center text-xl">
           {data.map((item, index) => {

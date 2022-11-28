@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "./Cards";
+import Cards from "../Card/Cards";
 
 function Projects() {
   const projects = [
@@ -36,7 +36,7 @@ function Projects() {
     <div className="py-5 mx-auto overflow-hidden sm:px:2 container">
       <h2 className="text-4xl font-bold mb-6 lg:ml-2">Projects</h2>
       <div className="flex mt-4 items-center justify-between">
-        <div className="mb-5 lg:ml-3">
+        <div className="mb-5 xl:ml-3 lg:ml-0 md:ml-0 sm:ml-0 ml-0">
           <button className="bg-primary px-5 py-2.5 rounded text-white mr-2">
             ONGOING
           </button>
@@ -47,8 +47,8 @@ function Projects() {
         <div className="-mb-2 flex lg:mr-4">
           <button className="border-primary border-solid border-2 py-2 px-3 rounded">
             <svg
-              width="10"
-              height="12"
+              width="16"
+              height="16"
               viewBox="0 0 8 12"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -63,8 +63,8 @@ function Projects() {
           </button>
           <button className="border-primary border-solid border-2 py-2 px-3 rounded ml-3">
             <svg
-              width="10"
-              height="12"
+              width="14"
+              height="16"
               viewBox="0 0 8 12"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -94,6 +94,9 @@ function Projects() {
             </div>
           );
         })}
+      </div>
+      <div className="container">
+        <hr className="border-1 shadow w-h-screen mt-14 mb-14" />
       </div>
     </div>
   );

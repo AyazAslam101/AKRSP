@@ -14,8 +14,8 @@ const Programmes = () => {
           </div>
           <div className="lg:ml-4 ">
             <h1 className="text-primary font-medium text-2xl">PROGRAMMES</h1>
-            <p className="text-4xl font-semibold mt-3">Social Pillar</p>
-            <p className="text-xl tracking-wide font-medium max-w-xl leading-8 lg:pb-6 lg:pt-4 mb-1">
+            <p className="text-4xl font-semibold xl:mt-8 lg:mt-3 md:mt-4 sm:mt-2">Social Pillar</p>
+            <p className="text-xl tracking-wide font-medium max-w-2xl leading-8 lg:mb-6 md:mb-6 sm:mb-4 lxl:mt-6 lg:mt-3 md:mt-4 sm:mt-4 md:mt-2 mt-2 mb-1">
               AKRSP has built a strong foundation of people’s institutions
               comprising more than 3700 Village and Women Organizations,
               majority of whom have come together to establish more than 60
@@ -28,11 +28,11 @@ const Programmes = () => {
             </button>
           </div>
         </div>
-        <div className="lg:grid lg:grid-cols-2 md:block md:gap-4 lg:gap-4 items-center mt-10">
+        <div className="lg:grid lg:grid-cols-2 md:block md:gap-4 lg:gap-4 items-center mt-20">
           <div>
-            <h1 className="text-primary font-medium text-2xl">PROGRAMMES</h1>
-            <p className="text-4xl font-semibold mt-2">Economic Pillar</p>
-            <p className="text-xl tracking-wide font-medium max-w-xl leading-8 lg:pb-6 lg:pt-4 mb-1">
+            <h1 className="text-2xl text-primary  lg:mt-8 md:mt-4">PROGRAMMES</h1>
+            <p className="text-4xl font-semibold xl:mt-8 lg:mt-4 lg:mt-8 md:mt-4 sm:mt-2">Economic Pillar</p>
+            <p className="text-xl tracking-wide font-medium max-w-2xl leading-8 lg:mb-6 md:mb-6 sm:mb-4 xl:mt-6 lg:mt-3 md:mt-4 sm:mt-4 md:mt-2 mt-2 mb-1">
               Sustained improvements in the quality of life GBC’s population
               hinges upon inclusive economic growth and shared employment
               opportunities. AKRSP’s efforts in developing economic

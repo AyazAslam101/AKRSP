@@ -3,12 +3,12 @@ import Image from "next/image";
 const Gallery = () => {
   return (
     <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
-      <div className="text-center mb-4">
-        <h2 className="text-3xl leading-10 font-extrabold">Media Gallery</h2>
+      <div className="text-center mb-16">
+        <h2 className="text-3xl leading-10 font-extrabold mb-8">Media Gallery</h2>
         <h4 className="text-2xl leading-10 font-semibold">
           Enhancing Employability and Leadership for Youth (EELY)
         </h4>
-        <p className="text-xl	tracking-wide leading-8 container lg:px-20 text-center mt-1">
+        <p className="text-xl	tracking-wide leading-8 container lg:px-20 text-center mt-4">
           Funded by: foreign affairs, trafe and development canada (DFATD) and
           the aga khan foundation, canada (AKFC) project period: 6 years (march
           2011-march 2017) geographic focus: all districts of gilgit-baltistan
@@ -87,7 +87,7 @@ const Gallery = () => {
         </div>
       </div>
       <div className="flex items-center justify-center mt-10">
-        <button className="border-primary border-solid border-2 py-1 px-2 rounded ">
+        <button className="border-primary border-solid border-2 py-3 px-4 rounded ">
           <svg
             width="14"
             height="14"
@@ -103,7 +103,7 @@ const Gallery = () => {
             />
           </svg>
         </button>
-        <button className="border-primary border-solid border-2 py-1 px-2 rounded ml-3">
+        <button className="border-primary border-solid border-2 py-3 px-4 rounded ml-3">
           <svg
             width="14"
             height="14"
