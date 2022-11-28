@@ -45,12 +45,12 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
-            <div className="absolute shrink  top-2 right-0 ">
+            <div className="absolute shrink  top-2 right-0 z-10">
               <Button setOpen={setOpen} open={open} navigation={navigation}>
                 <svg
-                  height="26"
+                  height="40"
                   viewBox="0 0 24 24"
-                  width="26"
+                  width="40"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
