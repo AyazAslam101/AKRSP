@@ -11,7 +11,7 @@ const data = [
 
 const Hero = () => {
   return (
-    <div className="programes-container mt-20 mb-10">
+    <div className="programes-container mt-20">
       {data.map((item , index) => {
         return (
           <div key={index} >
