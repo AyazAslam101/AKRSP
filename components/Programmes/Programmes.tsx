@@ -7,15 +7,15 @@ const Programmes = () => {
           <div className="lg:mb-0 mb-3 cursor-pointer">
             <Image
               src="/people.png"
-              width={700}
-              height={10}
+              width={650}
+              height={100}
               alt="alt"
             />
           </div>
-          <div className="lg:ml-4">
-            <h1 className="text-primary font-medium text-3xl">PROGRAMMES</h1>
+          <div className="lg:ml-4 ">
+            <h1 className="text-primary font-medium text-2xl">PROGRAMMES</h1>
             <p className="text-4xl font-semibold mt-3">Social Pillar</p>
-            <p className="text-2xl tracking-wide  lg:pb-6 lg:pt-4 mb-1">
+            <p className="text-xl tracking-wide font-medium max-w-xl leading-8 lg:pb-6 lg:pt-4 mb-1">
               AKRSP has built a strong foundation of people’s institutions
               comprising more than 3700 Village and Women Organizations,
               majority of whom have come together to establish more than 60
@@ -32,7 +32,7 @@ const Programmes = () => {
           <div>
             <h1 className="text-primary font-medium text-2xl">PROGRAMMES</h1>
             <p className="text-4xl font-semibold mt-2">Economic Pillar</p>
-            <p className="text-2xl tracking-wider leading-8 lg:pb-6 lg:pt-4 mb-1">
+            <p className="text-xl tracking-wide font-medium max-w-xl leading-8 lg:pb-6 lg:pt-4 mb-1">
               Sustained improvements in the quality of life GBC’s population
               hinges upon inclusive economic growth and shared employment
               opportunities. AKRSP’s efforts in developing economic
@@ -48,7 +48,7 @@ const Programmes = () => {
           <div className="lg:mt-0 sm:mt-3 md:mt-3 mt-3 lg:ml-2 cursor-pointer">
             <Image
               src="/image13.png"
-              width={700}
+              width={650}
               height={100}
               alt="alt"
             />

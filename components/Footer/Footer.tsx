@@ -142,9 +142,9 @@ const Footer = () => {
       </div>
    </div>
     <div className="bg-primary">
-    <div className="block lg:flex justify-evenly md:grid-cols-2 sm:block items-baseline mb-2">
+    <div className="block lg:flex justify-evenly md:grid-cols-2 sm:block items-baseline mb-1 container">
         <div>
-          <p className="text-center text-lg text-white">
+          <p className="text-center text-base text-white">
             &copy;{new Date().getFullYear()} Aga Khan Rural Support Programme.
             Developer: AKRSP IT Department.
           </p>
@@ -152,7 +152,7 @@ const Footer = () => {
         <div className="flex justify-center text-center">
           {navigation.main.map((item: any, key: any) => (
             <div key={key} className="px-1 py-2 flex">
-              <a href={item.href} className="text-lg text-white">
+              <a href={item.href} className="text-base text-white">
                 {item.name}
                 <span className="sm:invisible invisible md:invisible lg:visible ml-1">
                   |

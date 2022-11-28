@@ -18,15 +18,16 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-bgprimary">
-        <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
-          <div className="flex-shrink-0 lg:flex sm:block justify-center container items-baseline justify-evenly">
-            <div className="ml-3">
+        <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 programes-container">
+          <div className="flex-shrink-0 lg:flex sm:block justify-center programes-container items-baseline justify-evenly">
+            <div className="ml-">
               <a href="">
                 <Image
                   src="/Logo.png"
                   alt="Picture of the author"
                   width={100}
                   height={60}
+                  className=""
                 />
               </a>
             </div>

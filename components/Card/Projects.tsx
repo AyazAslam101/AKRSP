@@ -34,18 +34,18 @@ function Projects() {
   ];
   return (
     <div className="py-5 mx-auto overflow-hidden sm:px:2 container">
+      <h2 className="text-4xl font-bold mb-6 lg:ml-4">Projects</h2>
       <div className="flex mt-4 items-center justify-between">
-        <div className="mb-5 lg:ml-5">
-          <h2 className="text-4xl leading-8 font-bold mb-6">Projects</h2>
-          <button className="bg-primary px-5 py-2 rounded text-white mr-2">
+        <div className="mb-5 lg:ml-4">
+          <button className="bg-primary px-5 py-2.5 rounded text-white mr-2">
             ONGOING
           </button>
-          <button className="bg-white border-primary border-2 px-5 py-2 rounded text-primary mt-3">
+          <button className="bg-white border-primary border-2 px-4 py-2 rounded text-primary mt-3">
             ACCOMPLISHED
           </button>
         </div>
-        <div className="mb-5 flex lg:mr-5">
-          <button className="border-primary border-solid border-2 py-1 px-2 rounded">
+        <div className="-mb-2 flex lg:mr-4">
+          <button className="border-primary border-solid border-2 py-2 px-3 rounded">
             <svg
               width="10"
               height="12"
@@ -61,7 +61,7 @@ function Projects() {
               />
             </svg>
           </button>
-          <button className="border-primary border-solid border-2 py-1 px-2 rounded ml-3">
+          <button className="border-primary border-solid border-2 py-2 px-3 rounded ml-3">
             <svg
               width="10"
               height="12"

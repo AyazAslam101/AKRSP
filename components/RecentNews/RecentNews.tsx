@@ -14,7 +14,7 @@ function RecentNews(props: {
           <Image src={props.img} width={450} height={400} alt="alt " />
         </div>
         <div className="lg:flex lg:justify-between block mt-3 mb-4 container">
-          <div className="flex items-center  lg:-ml-4">
+          <div className="flex items-center  lg:-ml-4 md:-ml-1 sm:-ml-2 -ml-2">
             <UserSvg />
             <p className="text-lblack text-lg ml-2">{props.name}</p>
           </div>
