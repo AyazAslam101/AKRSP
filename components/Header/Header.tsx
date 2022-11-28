@@ -12,7 +12,7 @@ const Header = () => {
               <span className="text-primary font-bold leading-tight">
                 Pakistan
               </span>
-            </h2> 
+            </h2>
             <p className="py-2 font-medium text-3xl leading-10 mt-2">
               The Aga Khan Rural Support Programme (AKRSP) is a private,
               non-profit company, established by the Aga Khan Foundation in 1982
@@ -29,7 +29,7 @@ const Header = () => {
                   <Image src="/Image1.png" width={280} height={280} alt="alt" />
                 </div>
                 <div className="cursor-pointer mt-2">
-                <Image
+                  <Image
                     src="/Image2.png"
                     width={300}
                     height={100}
@@ -55,7 +55,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="fixed right-0 top-96 xl:block lg:block md:hidden sm:hidden hidden">
+        <div className="fixed right-0 top-96 xl:block lg:hidden md:hidden sm:hidden hidden z-10">
           <SideBar />
         </div>
       </div>

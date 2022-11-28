@@ -7,16 +7,15 @@
 @media (min-width: 1530px) {
   .container {
     max-width: 92%;
-    margin-left: auto!important;
-    margin-right: auto!important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 @media (min-width: 1530px) {
-  .programes-container
-  {
+  .programes-container {
     max-width: 89%;
-    margin-left: auto!important;
-    margin-right: auto!important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 html,
