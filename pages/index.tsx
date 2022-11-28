@@ -7,7 +7,7 @@ import Hero from "../components/Hero/Hero";
 import Gallery from "../components/Gallery/Gallery";
 import Documentries from "../components/Documentries/Documentries";
 import Alpha from "../components/Alpha/Alpha";
-import Projects from "../components/Card/Projects";
+import Projects from "../components/Project/Projects";
 import Slider from "../components/RecentNews/Slider";
 
 
