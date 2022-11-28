@@ -7,7 +7,7 @@ const Header = () => {
       <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 programes-container">
         <div className="lg:grid lg:grid-cols-2 sm:block md:block block gap-2 lg:gap-28 relative">
           <div className="pt-32">
-            <h2 className="text-6xl font-bold leading-tight text-black">
+            <h2 className="text-4xl font-bold leading-tight text-black">
               Aga Khan Rural Support Programme <br />
               <span className="text-primary font-bold leading-tight">
                 Pakistan

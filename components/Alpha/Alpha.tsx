@@ -131,7 +131,7 @@ const Alpha = () => {
   return (
     <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container mt-10">
       <div>
-        <p className="text-5xl font-semibold mb-4">
+        <p className="text-4xl font-semibold mb-4">
           Where <span className="text-primary">AKRSP</span> Work
         </p>
       </div>

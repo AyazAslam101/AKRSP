@@ -36,7 +36,7 @@ function Projects() {
     <div className="py-5 mx-auto overflow-hidden sm:px:2 container">
       <div className="flex mt-4 items-center justify-between">
         <div className="mb-5 lg:ml-5">
-          <h2 className="text-4xl font-bold mb-6">Projects</h2>
+          <h2 className="text-4xl leading-8 font-bold mb-6">Projects</h2>
           <button className="bg-primary px-5 py-2 rounded text-white mr-2">
             ONGOING
           </button>
