@@ -8,9 +8,9 @@ const Button = (props: {
 }) => {
   const { setOpen, navigation, open } = props;
   return (
-    <div className="xl:hidden lg:hidden">
+    <div className="xl:hidden lg:hidden z-10">
       <button
-       className="mt-6 mr-4"
+      className="mt-6 mr-4"
         onClick={() => {
           setOpen(true);
         }}

@@ -17,10 +17,10 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="bg-bgprimary">
+      <div className="bg-bgprimary fixed z-10 w-full">
         <div className="py-5 px-10 mx-auto overflow-hiden sm:px:2">
           <div className="flex-shrink-0 lg:flex sm:block justify-center programes-container items-baseline justify-evenly">
-            <div className="ml-">
+            <div>
               <a href="">
                 <Image
                   src="/Logo.png"
@@ -45,7 +45,7 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
-            <div className="absolute shrink  top-2 right-0 z-10">
+            <div className="absolute shrink top-2 right-0 z-10">
               <Button setOpen={setOpen} open={open} navigation={navigation}>
                 <svg
                   height="40"

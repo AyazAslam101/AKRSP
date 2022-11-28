@@ -4,8 +4,9 @@ import SideBar from "../SideBar/SideBar";
 const Header = () => {
   return (
     <>
-      <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 programes-container">
-        <div className="lg:grid lg:grid-cols-2 sm:block md:block block gap-20 relative">
+      <div className="">
+      <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 programes-container lg:pt-20 md:pt-20 sm:pt-20">
+        <div className="lg:grid lg:grid-cols-2 sm:block md:block block gap-20">
           <div className="lg:mt-32 md:10 sm:mt-10 mt-4">
             <h2 className="text-6xl font-bold leading-tight text-black">
               Aga Khan Rural Support Programme <br />
@@ -58,6 +59,7 @@ const Header = () => {
         <div className="fixed right-0 top-96 xl:block lg:hidden md:hidden sm:hidden hidden z-10">
           <SideBar />
         </div>
+      </div>
       </div>
     </>
   );
