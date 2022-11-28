@@ -8,7 +8,7 @@ const Button = (props: {
 }) => {
   const { setOpen, navigation, open } = props;
   return (
-    <div className="lg:hidden">
+    <div className="xl:hidden lg:hidden md:hidde ">
       <button
         onClick={() => {
           setOpen(true);

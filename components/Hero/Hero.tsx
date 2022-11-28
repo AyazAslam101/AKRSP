@@ -11,11 +11,11 @@ const data = [
 
 const Hero = () => {
   return (
-    <div className="py-2 px-6 container">
+    <div className="programes-container">
       {data.map((item , index) => {
         return (
           <div key={index} >
-            <div className="bg-primary p-8 py-16 rounded-md">
+            <div className="bg-primary p-8 py-14 rounded-md">
               <div className="flex items-center">
                 <p className="mb-4 font-medium text-xl text-white -mt-4">
                   {item.update} - <span>{item.created_at}</span>
