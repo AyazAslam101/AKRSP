@@ -34,7 +34,7 @@ function Projects() {
   ];
   return (
     <div className="py-5 mx-auto overflow-hidden sm:px:2 container">
-      <h2 className="text-4xl font-bold mb-6 lg:ml-2">Projects</h2>
+      <h2 className="text-4xl font-bold mb-6 lg:ml-3">Projects</h2>
       <div className="flex mt-4 items-center justify-between">
         <div className="mb-5 xl:ml-3 lg:ml-0 md:ml-0 sm:ml-0 ml-0">
           <button className="bg-primary px-5 py-2.5 rounded text-white mr-2">

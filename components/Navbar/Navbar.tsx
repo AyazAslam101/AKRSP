@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-bgprimary fixed z-10 w-full">
-        <div className="py-5 px-10 mx-auto overflow-hiden sm:px:2">
+        <div className="py-5 px-10 mx-auto container sm:px:2">
           <div className="flex-shrink-0 lg:flex sm:block justify-center programes-container items-baseline justify-evenly">
             <div>
               <a href="">
@@ -27,11 +27,11 @@ const Navbar = () => {
                   alt="Picture of the author"
                   width={100}
                   height={60}
-                  className=""
+                  layout="fixed"
                 />
               </a>
             </div>
-            <div className="lg:block lg:block hidden">
+            <div className="lg:block  hidden">
               <div className="flex">
                 {navigation.main.map((item) => (
                   <div key={item.name} className="px-2 md:px-1 py-2 md:py-1">
@@ -62,6 +62,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        <hr className="shadow-sm" />
       </div>
     </>
   );

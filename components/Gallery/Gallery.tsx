@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Gallery = () => {
   return (
-    <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container">
+    <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 programes-container">
       <div className="text-center mb-16">
         <h2 className="text-3xl leading-10 font-extrabold mb-8">Media Gallery</h2>
         <h4 className="text-2xl leading-10 font-semibold">

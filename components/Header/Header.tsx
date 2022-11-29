@@ -3,7 +3,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <>
-      <div className="programes-container lg:container sm:container md:container md:px-2 lg:px-0 px-4 relativ">
+      <div className="programes-container lg:container sm:container md:container md:px-2 lg:px-0 px-4">
       <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 programes-container lg:pt-20 md:pt-20 sm:pt-20">
         <div className="lg:grid lg:grid-cols-2 sm:block md:block block gap-20">
           <div className="lg:mt-32 md:10 sm:mt-10 mt-4">

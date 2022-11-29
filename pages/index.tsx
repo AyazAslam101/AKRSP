@@ -19,7 +19,9 @@ export default function Home() {
         <div className="fixed right-0 top-96 xl:block lg:hidden md:hidden sm:hidden hidden z-10">
           <SideBar />
         </div>
+        <div className="-mt-32">
         <Programmes />
+        </div>
         <Projects />
         <Slider />
         <Documentries />
