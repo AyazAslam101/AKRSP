@@ -100,7 +100,7 @@ const Footer = () => {
     <footer className="bg-white border-t-2">
       <div className="container sm:container lg:container md:container">
         <div className="py-10 overflow-hidden sm:px-6 lg:px-2">
-          <div className="grid grid-cols-2 lg:gap-1 md:gap-16 sm:gap-4 gap-16 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3">
+          <div className="grid grid-cols-2 lg:gap-1 md: sm:gap-4 gap-5 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2">
             {navigation?.links?.map((item, key) => (
               <div key={key} className="px-1 py-2 pl-14">
                 <a
