@@ -24,7 +24,7 @@ const Programmes = () => {
               wide array of partners including the local government departments.
             </p>
             <button className="bg-primary px-4 py-3 rounded text-white text-lg">
-              Read More
+              Real More
             </button>
           </div>
         </div>
