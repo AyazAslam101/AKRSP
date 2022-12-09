@@ -20,7 +20,7 @@ export interface ChipProps {
       }`
      }
     >
-      <button onClick={handleClick}>
+      <button className={active ? "bg-red" : "bg-black"}>
       {children}
       </button>
     </div>
