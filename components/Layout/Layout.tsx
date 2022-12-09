@@ -7,10 +7,10 @@ const Layout = (props: { children: any }) => {
   return (
     <div>
       <Navbar />
-      <div className="bg-bgprimary pb-36">
+      <div className="bg-bgprimary">
         <Header />
       </div>
-      <div className="container lg:container sm:container  md:container md:px-2 lg:px-0 px-4">
+      <div className="container px-12">
         {props.children}
       </div>
       <Footer />

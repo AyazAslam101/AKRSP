@@ -2,8 +2,8 @@ import Image from "next/image";
 const Programmes = () => {
   return (
     <>
-      <div className="py-5 overflow-hidden sm:px:2 programes-container">
-        <div className="lg:grid lg:grid-cols-2 md:block sm:block block md:gap-4 lg:gap-4 md:gap-4 sm:gap-4 gap-4  items-center ">
+      <div className="py-5 overflow-hidden container">
+        <div className="lg:grid lg:grid-cols-2 md:block sm:block block md:gap-4 lg:gap-4 md:gap-4 sm:gap-4 gap-4  items-center">
           <div className="lg:mb-0 mb-3 cursor-pointer">
             <Image src="/people.png" width={650} height={100} alt="alt" />
           </div>
@@ -25,9 +25,9 @@ const Programmes = () => {
             </button>
           </div>
         </div>
-        <div className="lg:grid lg:grid-cols-2 md:block md:gap-4 lg:gap-4 items-center mt-20">
+        <div className="lg:grid lg:grid-cols-2 md:block md:gap-4 lg:gap-4 items-center mt-16">
           <div>
-            <h1 className="text-2xl text-primary  lg:mt-8 md:mt-4">
+            <h1 className="text-2xl text-primary  lg:mt-6 md:mt-2">
               PROGRAMMES
             </h1>
             <p className="text-4xl font-semibold xl:mt-8 lg:mt-4 lg:mt-8 md:mt-4 sm:mt-2">

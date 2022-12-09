@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 const Gallery = () => {
   return (
-    <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 programes-container">
+    <div className="py-5 overflow-hidden container">
       <div className="text-center mb-16">
         <h2 className="text-3xl leading-10 font-extrabold mb-8">Media Gallery</h2>
         <h4 className="text-2xl leading-10 font-semibold">
           Enhancing Employability and Leadership for Youth (EELY)
         </h4>
-        <p className="text-xl	tracking-wide leading-8 container lg:px-20 text-center mt-4">
+        <p className="text-base font-weight font-normal tracking-wide leading-7 container lg:px-20 text-center mt-4">
           Funded by: foreign affairs, trafe and development canada (DFATD) and
           the aga khan foundation, canada (AKFC) project period: 6 years (march
           2011-march 2017) geographic focus: all districts of gilgit-baltistan
@@ -18,7 +18,7 @@ const Gallery = () => {
         </p>
       </div>
       <div>
-        <div className="grid grid-cols-4 sm:gap-2 md:gap-2 lg:gap-2 cursor-pointer">
+        <div className="grid grid-cols-4 sm:gap-2 md:gap-2 lg:gap-2 gap-2 cursor-pointer">
           <div>
             <Image
               src="/image5.png"

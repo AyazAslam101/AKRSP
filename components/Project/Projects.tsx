@@ -1,7 +1,9 @@
 import React from "react";
 import Cards from "../Card/Cards";
+import Chip  from "../Chip/Chip";
 
 function Projects() {
+
   const projects = [
     {
       img: "/project11.png",
@@ -33,14 +35,15 @@ function Projects() {
     },
   ];
   return (
-    <div className="py-5 mx-auto overflow-hidden sm:px:2 container">
-      <h2 className="text-4xl font-bold mb-6 lg:ml-3">Projects</h2>
+    <div className="py-5">
+      <h2 className="text-4xl font-bold mb-6">Projects</h2>
       <div className="flex mt-4 items-center justify-between">
-        <div className="mb-5 xl:ml-3 lg:ml-0 md:ml-0 sm:ml-0 ml-0">
-          <button className="bg-primary px-5 py-2.5 rounded text-white mr-2">
+        <div className="mb-5">
+
+          <button className="bg-primary border-primary  focus:bg-white px-4 focus:z-10 py-2.5 border-0.5 rounded text-white mr-2 focus:ring-primary-500 focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3">
             ONGOING
           </button>
-          <button className="bg-white border-primary border-2 px-4 py-2 rounded text-primary mt-3">
+          <button className="bg-white border-primary focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3">
             ACCOMPLISHED
           </button>
         </div>
@@ -80,7 +83,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-0 md:grid-cols-2 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-4 md:grid-cols-2 sm:grid-cols-2 gap-4">
         {projects.map((project, index) => {
           const { img, description, title, readMore } = project;
           return (

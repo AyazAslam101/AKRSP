@@ -129,14 +129,14 @@ const data = {
 
 const Alpha = () => {
   return (
-    <div className="py-5 px-2 mx-auto overflow-hidden sm:px:2 container mt-10">
+    <div className="py-5 container mt-10">
       <div>
         <p className="text-4xl font-semibold mb-4">
           Where <span className="text-primary">AKRSP</span> Work
         </p>
       </div>
       <div className="relative">
-        <div className="absolute flex justify-center items-center -ml-0 w-px  xl:h-[26rem] lg:h-[32rem]  lg:visible md:invisible sm:invisible invisible lg:mt-12 bg-primary rounded-full"></div>
+        <div className="absolute flex justify-center items-center -ml- w-px  xl:h-[26rem] lg:h-[32rem]  lg:visible md:invisible sm:invisible invisible lg:mt-12 bg-primary rounded-full"></div>
       </div>
       <div className="lg:flex flex-col md:flex-row sm:flex-row flex-row">
         <div>

@@ -8,7 +8,7 @@ function RecentNews(props: {
   date: any;
 }) {
   return (
-    <div className="container overflow-hidden rounded h-full px-1 mt-4">
+    <div className="container overflow-hidden rounded h-full mt-4">
       <div>
         <div className="lg:mb-0 mb-4 cursor-pointer">
           <Image src={props.img} width={450} height={400} alt="alt " />

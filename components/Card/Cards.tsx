@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Cards({ img, title, description, readMore,}: any) {
   return (
-    <div className="container overflow-hidden rounded">
+    <div className="container overflow-hidden rounded ">
       <div className="mb-2">
         <Image src={img} alt="alt" width={50} height={10} layout="responsive" />
       </div>

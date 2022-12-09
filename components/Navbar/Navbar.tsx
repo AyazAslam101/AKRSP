@@ -17,9 +17,10 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="bg-bgprimary fixed z-10 w-full">
-        <div className="py-5 px-10 mx-auto container sm:px:2">
-          <div className="flex-shrink-0 lg:flex sm:block justify-center programes-container items-baseline justify-evenly">
+     <div className="container px-1">
+     <div className="bg-bgprimary fixed left-0 z-10 w-full">
+        <div className="py-5">
+          <div className="flex-shrink-0 lg:flex sm:block justify-center container items-baseline justify-between">
             <div>
               <a href="">
                 <Image
@@ -31,7 +32,7 @@ const Navbar = () => {
                 />
               </a>
             </div>
-            <div className="lg:block  hidden">
+            <div className="lg:block hidden">
               <div className="flex">
                 {navigation.main.map((item) => (
                   <div key={item.name} className="px-2 md:px-1 py-2 md:py-1">
@@ -64,6 +65,7 @@ const Navbar = () => {
         </div>
         <hr className="shadow-sm" />
       </div>
+     </div>
     </>
   );
 };

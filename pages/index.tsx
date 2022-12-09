@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className="relative -top-44">
+        <div className="relative -top-48">
           <Hero />
         </div>
         <div className="fixed right-0 top-96 xl:block lg:hidden md:hidden sm:hidden hidden z-10">

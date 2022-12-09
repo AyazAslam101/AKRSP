@@ -1,6 +1,6 @@
 import React from "react";
 import RecentNews from "./RecentNews";
-import { Chip } from "../Chip/Chip";
+import Chip  from "../Chip/Chip";
 const data = [
   {
     label: "All",
@@ -53,7 +53,7 @@ function Slider() {
   ];
   return (
     <div className="container mb-8">
-      <div className="xl:ml-5 lg:ml-0 md:ml-0 sm:ml-0 ml-0">
+      <div>
         <h2 className="text-4xl font-bold">Recent News</h2>
         <div className="lg:flex grid md:grid-cols-4 grid-cols-2 mt-6 items-center text-xl">
           {data.map((item, index) => {
@@ -72,7 +72,7 @@ function Slider() {
           })}
         </div>
       </div>
-      <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-0 md:grid-cols-2 sm:grid-cols-2 gap-4 mt-6">
+      <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-10 md:grid-cols-2 sm:grid-cols-2 gap-4 mt-6">
         {Slider.map((slider, index) => {
           return (
             <RecentNews
