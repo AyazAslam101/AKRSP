@@ -148,6 +148,9 @@ function Projects() {
         className="mt-4 flex overflow-x-auto overflow-y-hidden scrollbar-hide mb-5 transition gap-3 w-full bg-transparent"
         ref={sliderDiv}
       >
+
+
+        
         {projects.map((project, index) => {
           const { img, description, title, readMore } = project;
           return (
