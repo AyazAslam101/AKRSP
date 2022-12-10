@@ -3,9 +3,10 @@ import Image from "next/image";
 
 function Cards({ img, title, description, readMore,}: any) {
   return (
-    <div className="container overflow-hidden rounded ">
+    <div className="w-[300px]">
+      <div>
       <div className="mb-2">
-        <Image src={img} alt="alt" width={50} height={10} layout="responsive" />
+        <Image src={img} alt="alt" width={50} height={10} />
       </div>
       <div className="mt-2 px-2">
         <h6 className="font-bold mb-2 text-xl">{title}</h6>
@@ -28,6 +29,7 @@ function Cards({ img, title, description, readMore,}: any) {
             />
           </svg>
         </button>
+      </div>
       </div>
     </div>
   );

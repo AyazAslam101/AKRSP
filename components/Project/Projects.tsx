@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import Cards from "../Card/Cards";
-import Chip  from "../Chip/Chip";
+import Chip from "../Chip/Chip";
 
 function Projects() {
+
+  const sliderDiv = useRef<HTMLDivElement | null>(null);
+
+  const handleSlide = (direction: string) => {
+    console.log('click')
+    const scrollWidth: number | any = sliderDiv?.current?.scrollWidth;
+    if (sliderDiv.current) {
+      const { scrollLeft, clientWidth } = sliderDiv.current;
+      const scrollTo =
+        direction == 'left'
+          ? Math.floor(scrollLeft - clientWidth)
+          : Math.floor(scrollLeft + clientWidth);
+
+
+      if (scrollTo >= scrollWidth) {
+        sliderDiv.current.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        sliderDiv.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
+      }
+
+    }
+  };
 
   const projects = [
     {
@@ -33,6 +55,41 @@ function Projects() {
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
       readMore: "Real more",
     },
+    {
+      img: "/project14.png",
+      title: "PEDO Micro-Hydro Project",
+      description:
+        "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
+      readMore: "Real more",
+    },
+    {
+      img: "/project14.png",
+      title: "PEDO Micro-Hydro Project",
+      description:
+        "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
+      readMore: "Real more",
+    },
+    {
+      img: "/project14.png",
+      title: "PEDO Micro-Hydro Project",
+      description:
+        "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
+      readMore: "Real more",
+    },
+    {
+      img: "/project14.png",
+      title: "PEDO Micro-Hydro Project",
+      description:
+        "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
+      readMore: "Real more",
+    },
+    {
+      img: "/project14.png",
+      title: "PEDO Micro-Hydro Project",
+      description:
+        "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
+      readMore: "Real more",
+    },
   ];
   return (
     <div className="py-5">
@@ -48,7 +105,9 @@ function Projects() {
           </button>
         </div>
         <div className="-mb-2 flex lg:mr-4">
-          <button className="border-primary border-solid border-2 py-2 px-3 rounded">
+          <button className="border-primary border-solid border-2 py-2 px-3 rounded" onClick={() => {
+            handleSlide('left')
+          }} >
             <svg
               width="16"
               height="16"
@@ -64,7 +123,9 @@ function Projects() {
               />
             </svg>
           </button>
-          <button className="border-primary border-solid border-2 py-2 px-3 rounded ml-3">
+          <button className="border-primary border-solid border-2 py-2 px-3 rounded ml-3" onClick={() => {
+            handleSlide('right')
+          }} >
             <svg
               width="14"
               height="16"
@@ -83,11 +144,14 @@ function Projects() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-4 md:grid-cols-2 sm:grid-cols-2 gap-4">
+      <div
+        className="mt-4 flex overflow-x-auto overflow-y-hidden scrollbar-hide mb-5 transition gap-3 w-full bg-transparent"
+        ref={sliderDiv}
+      >
         {projects.map((project, index) => {
           const { img, description, title, readMore } = project;
           return (
-            <div key={index}>
+            <div key={index} className='w-full' >
               <Cards
                 img={img}
                 description={description}
@@ -97,6 +161,10 @@ function Projects() {
             </div>
           );
         })}
+      </div>
+
+      <div className="product-custom">
+
       </div>
       <div className="container">
         <hr className="border-1 shadow w-h-screen mt-14 mb-14" />
