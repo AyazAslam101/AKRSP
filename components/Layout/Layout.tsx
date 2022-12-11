@@ -10,7 +10,7 @@ const Layout = (props: { children: any }) => {
       <div className="bg-bgprimary">
         <Header />
       </div>
-      <div className="container lg:px-12 md:px-8 sm:px-6 px-4">
+      <div className="container lg:px-10 md:px-8 sm:px-6 px-4">
         {props.children}
       </div>
       <Footer />

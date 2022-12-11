@@ -4,32 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @media (min-width: 1530px) {
-  .container {
-    max-width: 90%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    border-radius: 2px solid #000;
-  }
-} */
-/* @media (min-width: 1530px) {
-  .programes-container {
-    max-width: 91%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-} */
-.product-custom {
-  display: grid;
-}
-.product-custom-slider {
-  display: grid;
-  align-items: center;
-  grid-gap: 10px;
-  transition: all 0.5ms;
-  grid-auto-flow: column;
-  overflow: hidden;
-}
 html,
 body {
   padding: 0;

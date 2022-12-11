@@ -23,7 +23,7 @@ const Header = () => {
               </p>
             </div>
             <div>
-              <div className="flex flex-col gap-3 pt-10 mx-auto">
+              <div className="md:flex md:flex-col hidden gap-3 pt-10 mx-auto">
                 <div className="grid grid-cols-[350px_600px]">
                   <div className="cursor-pointer">
                     <Image

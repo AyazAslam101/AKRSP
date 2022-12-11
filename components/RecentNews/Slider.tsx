@@ -1,6 +1,7 @@
 import React from "react";
 import RecentNews from "./RecentNews";
-import Chip  from "../Chip/Chip";
+import Chip from "../Chip/Chip";
+import RecentVideos from "./Videos";
 const data = [
   {
     label: "All",
@@ -28,7 +29,7 @@ const data = [
   },
 ];
 function Slider() {
-  const Slider = [
+  const slider = [
     {
       img: "/Rectangle1.png",
       name: "Naeem Hassan",
@@ -72,8 +73,8 @@ function Slider() {
           })}
         </div>
       </div>
-      <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-10 md:grid-cols-2 sm:grid-cols-2 gap-4 mt-6">
-        {Slider.map((slider, index) => {
+      <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-10 md:grid-cols-2 md:gap-6 sm:gap-4 sm:grid-cols-2 gap-4 mt-6">
+        {slider.map((slider, index) => {
           return (
             <RecentNews
               key={index}
@@ -85,6 +86,7 @@ function Slider() {
           );
         })}
       </div>
+      <div></div>
     </div>
   );
 }

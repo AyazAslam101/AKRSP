@@ -16,11 +16,9 @@ export default function Home() {
         <div className="relative -top-48">
           <Hero />
         </div>
-        <div className="fixed right-0 top-96 xl:block lg:hidden md:hidden sm:hidden hidden z-10">
-          <SideBar />
-        </div>
+        <SideBar />
         <div className="-mt-32">
-        <Programmes />
+          <Programmes />
         </div>
         <Projects />
         <Slider />

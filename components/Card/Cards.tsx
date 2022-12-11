@@ -3,10 +3,10 @@ import Image from "next/image";
 
 function Cards({ img, title, description, readMore,}: any) {
   return (
-    <div className="w-[300px]">
+    <div className="w-[350px]">
       <div>
       <div className="mb-2">
-        <Image src={img} alt="alt" width={50} height={10} />
+        <Image src={img} alt="alt" width={350} height={100} />
       </div>
       <div className="mt-2 px-2">
         <h6 className="font-bold mb-2 text-xl">{title}</h6>

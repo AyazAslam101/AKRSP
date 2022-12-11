@@ -8,7 +8,7 @@ const Button = (props: {
 }) => {
   const { setOpen, navigation, open } = props;
   return (
-    <div className="xl:hidden lg:hidden z-10">
+    <div className="xl:hidden block z-10">
       <button
       className="mt-6 mr-4"
         onClick={() => {

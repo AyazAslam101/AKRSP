@@ -1,44 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
+import Card from "./Card";
+import HeroCard from "./HeroCard";
 
 const data = [
-  {
-    update: "Latest Updates",
-    created_at: "26-09-2022",
-    description:
-      "Aga Khan Rural Support Programme (AKRSP) Provides PPE worth PKR16,997,000 to Sindh Government",
-  },
+  [
+    {
+      update: "Latest Updates",
+      created_at: "26-09-2021",
+      description:
+        "Aga Khan Rural Support Programme (AKRSP) Provides PPE worth PKR16,997,000 to Sindh Government",
+    },
+  ],
+  [
+    {
+      update: "Latest Updates",
+      created_at: "26-09-2022",
+      description: "Community mobilisation paying off in Chitral",
+    },
+  ],
 ];
 
 const Hero = () => {
+  const [Active, setActive] = useState("FirstCard");
+
   return (
     <div className="container mt-20">
-      {data.map((item , index) => {
-        return (
-          <div key={index} >
-            <div className="bg-primary p-8 py-14 rounded-md">
-              <div className="flex items-center">
-                <p className="mb-4 font-medium text-xl text-white -mt-4">
-                  {item.update} - <span>{item.created_at}</span>
-                </p>
-              </div>
-              <div>
-                <div>
-                  <p className="font-bold text-3xl tracking-widest leading-relaxed text-white leading-10">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-              <div className="flex pt-8 space-x-3">
-                <div className="h-2 w-12 bg-white opacity-40 rounded"></div>
-                <div className="h-2 w-12 bg-white rounded"></div>
-                <div className="h-2 w-12 bg-white opacity-40 rounded"></div>
-                <div className="h-2 w-12 bg-white opacity-40 rounded"></div>
-                <div className="h-2 w-12 bg-white opacity-40 rounded"></div>
-              </div>
-            </div>
+      <div>
+        <div className="bg-primary p-8 py-14 transition ease-in-out	 rounded-md">
+          {Active === "FirstCard" && <HeroCard data={data} />}
+          {Active === "SecondCard" && <Card data={data} />}
+          <div className="flex pt-8 space-x-3">
+            <button
+              onClick={() => setActive("FirstCard")}
+              className="h-2 w-12 bg-white opacity-40 border-primary focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
+            ></button>
+            <button
+              onClick={() => setActive("SecondCard")}
+              className="h-2 w-12 bg-white opacity-40 border-primary focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
+            ></button>
+            <button
+              onClick={() => setActive("FirstCard")}
+              className="h-2 w-12 bg-white opacity-40 border-primary focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
+            ></button>
+            <button
+              onClick={() => setActive("SecondCard")}
+              className="h-2 w-12 bg-white opacity-40 border-primary focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
+            ></button>
           </div>
-        );
-      })}
+        </div>
+      </div>
     </div>
   );
 };

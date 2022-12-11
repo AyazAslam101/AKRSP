@@ -103,10 +103,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 lg:gap-1 md: sm:gap-4 gap-5 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2">
             {navigation?.links?.map((item, key) => (
               <div key={key} className="px-1 py-2 pl-14">
-                <a
-                  href="#"
-                  className="text-primary font-medium text-xl"
-                >
+                <a href="#" className="text-primary font-medium text-xl">
                   {item?.name}
                 </a>
                 <div className="mt-4">
@@ -152,8 +149,11 @@ const Footer = () => {
           <div className="flex justify-center text-center">
             {navigation.main.map((item: any, key: any) => (
               <div key={key} className="px-1 py-2 flex divide-x">
-                <a href="#" className="text-sm font-normal text-white">
-                  {item.name} |
+                <a
+                  href="#"
+                  className="text-sm font-normal text-white flex whitespace-nowrap"
+                >
+                  {item.name} <span className="ml-1">|</span>
                 </a>
               </div>
             ))}

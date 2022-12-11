@@ -20,7 +20,7 @@ const Programmes = () => {
               These LSOs take on a multi-sector agenda in partnership with a
               wide array of partners including the local government departments.
             </p>
-            <button className="bg-primary px-4 py-3 rounded text-white text-lg">
+            <button className="bg-white px-4 py-3 border-primary border-2 rounded-md focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 text-primary text-lg">
               Read More
             </button>
           </div>
@@ -42,7 +42,7 @@ const Programmes = () => {
               farming skills have been instrumental in this regard by increasing
               farm surplus.
             </p>
-            <button className="bg-primary px-4 py-3 rounded text-white text-lg">
+            <button className="bg-white px-4 py-3 border-primary border-2 rounded-md focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 text-primary text-lg">
               Read More
             </button>
           </div>

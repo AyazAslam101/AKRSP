@@ -1,13 +1,11 @@
 import React, { useRef } from "react";
 import Cards from "../Card/Cards";
-import Chip from "../Chip/Chip";
 
 function Projects() {
 
   const sliderDiv = useRef<HTMLDivElement | null>(null);
 
   const handleSlide = (direction: string) => {
-    console.log('click')
     const scrollWidth: number | any = sliderDiv?.current?.scrollWidth;
     if (sliderDiv.current) {
       const { scrollLeft, clientWidth } = sliderDiv.current;
@@ -62,45 +60,17 @@ function Projects() {
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
       readMore: "Real more",
     },
-    {
-      img: "/project14.png",
-      title: "PEDO Micro-Hydro Project",
-      description:
-        "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
-      readMore: "Real more",
-    },
-    {
-      img: "/project14.png",
-      title: "PEDO Micro-Hydro Project",
-      description:
-        "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
-      readMore: "Real more",
-    },
-    {
-      img: "/project14.png",
-      title: "PEDO Micro-Hydro Project",
-      description:
-        "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
-      readMore: "Real more",
-    },
-    {
-      img: "/project14.png",
-      title: "PEDO Micro-Hydro Project",
-      description:
-        "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
-      readMore: "Real more",
-    },
+
   ];
   return (
-    <div className="py-5">
+    <div className="py-5 mt-32">
       <h2 className="text-4xl font-bold mb-6">Projects</h2>
       <div className="flex mt-4 items-center justify-between">
         <div className="mb-5">
-
-          <button className="bg-primary border-primary  focus:bg-white px-4 focus:z-10 py-2.5 border-0.5 rounded text-white mr-2 focus:ring-primary-500 focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3">
+        <button className="border-primary focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3 mr-3">
             ONGOING
           </button>
-          <button className="bg-white border-primary focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3">
+          <button className="border-primary focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3">
             ACCOMPLISHED
           </button>
         </div>
@@ -145,12 +115,9 @@ function Projects() {
       </div>
 
       <div
-        className="mt-4 flex overflow-x-auto overflow-y-hidden scrollbar-hide mb-5 transition gap-3 w-full bg-transparent"
+        className="mt-4 flex overflow-x-auto overflow-y-hidden scrollbar-hide mb-5 transition gap-6 w-full bg-transparent"
         ref={sliderDiv}
       >
-
-
-        
         {projects.map((project, index) => {
           const { img, description, title, readMore } = project;
           return (
@@ -164,10 +131,6 @@ function Projects() {
             </div>
           );
         })}
-      </div>
-
-      <div className="product-custom">
-
       </div>
       <div className="container">
         <hr className="border-1 shadow w-h-screen mt-14 mb-14" />
