@@ -9,9 +9,9 @@ function RecentNews(props: {
 }) {
   return (
     <div className="container rounded mmt-4 ">
-      <div className="w-[380px]">
+      <div className="w-[435px]">
         <div className="lg:mb-0 mb-4 cursor-pointer">
-          <Image src={props.img} width={450} height={400} alt="alt " />
+          <Image src={props.img} width={435} height={400} alt="alt " />
         </div>
         <div className="lg:flex lg:justify-between block mt-3 mb-4 container">
           <div className="flex items-center">

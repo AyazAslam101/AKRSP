@@ -28,6 +28,11 @@ const data = [
   ],
 ];
 
+const label ={
+  label:"",
+  type:""
+}
+
 const Hero = () => {
   const [Active, setActive] = useState("FirstCard");
 
@@ -35,7 +40,7 @@ const Hero = () => {
     
     <div className="container mt-20">
       <div >
-        <div className="bg-primary p-8 py-14 transition ease-in-out rounded-md">
+        <div className="bg-primary p-8 py-14 transition ease-in-out rounded-md h">
           {Active === "FirstCard" && <HeroCard data={data} />}
           {Active === "SecondCard" && <Card data={data} />}
           <div className="flex pt-8 space-x-3">

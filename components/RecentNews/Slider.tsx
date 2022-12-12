@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import Chip from "../Chip/Chip";
 import RecentNews from "./RecentNews";
 
 function Slider() {
@@ -34,6 +35,20 @@ function Slider() {
       description: "Earthly matters: A bright future",
     },
     {
+      img: "/Rectangle2.png",
+      name: "Naeem Hassan",
+      date: "06/19/2022",
+      value: "in-the-media",
+      description: "Sadpara Development Project",
+    },
+    {
+      img: "/Rectangle3.png",
+      name: "Naeem Hassan",
+      date: "06/19/2022",
+      value: "events",
+      description: "Community mobilisation paying off in Chitral",
+    },
+    {
       img: "/Rectangle1.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
@@ -41,32 +56,26 @@ function Slider() {
       description: "Earthly matters: A bright future",
     },
     {
-      img: "/Rectangle1.png",
+      img: "/Rectangle2.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
       value: "in-the-media",
       description: "Earthly matters: A bright future",
     },
     {
-      img: "/Rectangle1.png",
+      img: "/Rectangle3.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
       value: "events",
       description: "Earthly matters: A bright future",
     },
+
     {
-      img: "/Rectangle2.png",
+      img: "/Rectangle1.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
       value: "in-the-media",
-      description: "Sadpara Development Project",
-    },
-    {
-      img: "/Rectangle2.png",
-      name: "Naeem Hassan",
-      date: "06/19/2022",
-      value: "our-stories",
-      description: "Sadpara Development Project",
+      description: "Earthly matters: A bright future",
     },
     {
       img: "/Rectangle2.png",
@@ -82,22 +91,16 @@ function Slider() {
       value: "events",
       description: "Sadpara Development Project",
     },
+
     {
       img: "/Rectangle3.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
-      value: "events",
+      value: "photographs",
       description: "Community mobilisation paying off in Chitral",
     },
     {
       img: "/Rectangle2.png",
-      name: "Naeem Hassan",
-      date: "06/19/2022",
-      value: "photographs",
-      description: "Sadpara Development Project",
-    },
-    {
-      img: "/Rectangle3.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
       value: "photographs",
@@ -111,7 +114,7 @@ function Slider() {
       description: "Community mobilisation paying off in Chitral",
     },
     {
-      img: "/Rectangle3.png",
+      img: "/Rectangle1.png",
       name: "Naeem Hassan",
       date: "06/19/2022",
       value: "videos",
@@ -152,17 +155,14 @@ function Slider() {
           <div className="lg:flex md:grid md:grid-cols-3 grid-cols-2 mt-6 items-center text-xl">
             {data.map((item, index) => {
               return (
-                <button
-                  key={index}
-                  onClick={() => handleClick(item.value)}
-                  className={`lg:px-8 lg:py-3 md:px-6 mr-2 md:py-4 sm:px-1 sm:py-2 mt-2 px-2 py-2 border-2 rounded-full cursor-pointer ${
-                    true
-                      ? "border-primary focus:bg-primary focus:text-white focus:z-10 focus:ring-1 focus:ring-primary-500 focus:border-2 text-primary mt-3"
-                      : "border-primary focus:bg-white focus:text-primary focus:z-10 focus:ring-1 focus:ring-primary-500 focus:border-2 text-primary mt-3"
-                  }`}
-                >
-                  {item.label}
-                </button>
+                <Chip
+                key={index}
+                value={item.value}
+                isActive={index === 0}
+                onClick={()=>handleClick(item.value)}
+              >
+                {item.label}
+              </Chip>
               );
             })}
           </div>

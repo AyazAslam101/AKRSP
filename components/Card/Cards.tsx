@@ -3,14 +3,14 @@ import Image from "next/image";
 
 function Cards({ img, title, description, readMore,}: any) {
   return (
-    <div className="w-[380px]">
+    <div className="w-[400px]">
       <div>
       <div className="mb-2">
-        <Image src={img} alt="alt" width={380} height={100} />
+        <Image src={img} alt="alt" width={400} height={100} />
       </div>
-      <div className="mt-2 px-2">
-        <h6 className="font-bold mb-2 text-xl">{title}</h6>
-        <p className="text-lg overflow-hidden">{description}</p>
+      <div className="mt-3 px-2">
+        <h6 className="font-medium mb-2 text-xl h-16">{title}</h6>
+        <p className="text-base font-normal	">{description}</p>
         <button className="mt-2 text-lg py-2 rounded text-primary flex items-center">
           {readMore}
           <svg

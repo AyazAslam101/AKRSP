@@ -5,7 +5,7 @@ const HeroCard = (props:{data:any}) => {
     <div>
         {props.data[0].map((item:any, index :any) => {
             return (
-                <div key={index} className='h-70 transition ease-in-out h-max-70 h-min-70'>
+                <div key={index} className='transition ease-in-out'>
                 <div className="flex items-center">
                   <p className="mb-4 font-medium text-xl text-white -mt-4">
                     {item.update} - <span>{item.created_at}</span>

@@ -109,7 +109,7 @@ const Footer = () => {
                 <div className="mt-4">
                   {item?.lists?.map((list, key) => (
                     <div key={key}>
-                      <p className="p-2 -ml-2 font-normal text-base leading-7">
+                      <p className="p-2 -ml-2 font-normal text-base leading-7 hover:text-primary">
                         <a href="#">{list?.name}</a>
                       </p>
                       <div>
@@ -121,7 +121,7 @@ const Footer = () => {
                             <div>
                               {items?.order?.map((items: any, key: any) => (
                                 <div key={key}>
-                                  <p className="p-2 -ml-2 font-normal text-base leading-7">
+                                  <p className="p-2 -ml-2 font-normal text-base leading-7 hover:text-primary">
                                     {items?.name}
                                   </p>
                                 </div>
@@ -139,7 +139,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-primary">
-        <div className="block lg:flex justify-between md:grid-cols-2 sm:block items-baseline mb-1 container px-14">
+        <div className="block lg:flex justify-between md:grid-cols-2 sm:block items-baseline mb-1 container px-14 py-2">
           <div>
             <p className="text-center text-sm font-normal text-white">
               &copy;{new Date().getFullYear()} Aga Khan Rural Support Programme.

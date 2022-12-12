@@ -41,21 +41,21 @@ function Projects() {
     },
     {
       img: "/project13.png",
-      title: "WES-II Project",
+      title: "PEDO Micro-Hydro Project",
       description:
         "WES-II has been launched with a project period of three years (2015-2018) with extended grants from the Government of. ",
       readMore: "Real more",
     },
     {
       img: "/project14.png",
-      title: "PEDO Micro-Hydro Project",
+      title: "WES-II Project ",
       description:
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
       readMore: "Real more",
     },
     {
       img: "/project14.png",
-      title: "PEDO Micro-Hydro Project",
+      title: "WES-II Project",
       description:
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
       readMore: "Real more",
