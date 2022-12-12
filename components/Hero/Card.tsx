@@ -5,7 +5,7 @@ const Card = (props:{data:any}) => {
       <div>
           {props.data[1].map((item:any, index :any) => {
               return (
-                  <div className='h-full h-max-70 h-min-70'>
+                  <div key={index} className='h-70 tran h-max-70 h-min-70'>
                   <div className="flex items-center">
                     <p className="mb-4 font-medium text-xl text-white -mt-4">
                       {item.update} - <span>{item.created_at}</span>

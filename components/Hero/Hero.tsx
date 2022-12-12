@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import Card from "./Card";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 import HeroCard from "./HeroCard";
 
 const data = [
@@ -24,9 +32,10 @@ const Hero = () => {
   const [Active, setActive] = useState("FirstCard");
 
   return (
+    
     <div className="container mt-20">
-      <div>
-        <div className="bg-primary p-8 py-14 transition ease-in-out	 rounded-md">
+      <div >
+        <div className="bg-primary p-8 py-14 transition ease-in-out rounded-md">
           {Active === "FirstCard" && <HeroCard data={data} />}
           {Active === "SecondCard" && <Card data={data} />}
           <div className="flex pt-8 space-x-3">

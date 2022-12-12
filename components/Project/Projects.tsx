@@ -65,7 +65,7 @@ function Projects() {
   return (
     <div className="py-5 mt-32">
       <h2 className="text-4xl font-bold mb-6">Projects</h2>
-      <div className="flex mt-4 items-center justify-between">
+      <div className="flex mt-4 items-center justify-between items-center">
         <div className="mb-5">
         <button className="border-primary focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3 mr-3">
             ONGOING
@@ -74,7 +74,7 @@ function Projects() {
             ACCOMPLISHED
           </button>
         </div>
-        <div className="-mb-2 flex lg:mr-4">
+        <div className="flex lg:mr-4">
           <button className="border-primary border-solid border-2 py-2 px-3 rounded" onClick={() => {
             handleSlide('left')
           }} >

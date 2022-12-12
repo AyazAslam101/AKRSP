@@ -129,7 +129,7 @@ const data = {
 
 const Alpha = () => {
   return (
-    <div className="py-5 container mt-10">
+    <div className="py-5 container">
       <div>
         <p className="text-4xl font-semibold mb-4">
           Where <span className="text-primary">AKRSP</span> Work
