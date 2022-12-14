@@ -23,27 +23,22 @@ const data = [
     {
       update: "Latest Updates",
       created_at: "26-09-2022",
-      description: "Community mobilisation paying off in Chitral",
+      description:
+        "Aga Khan Rural Support Programme (AKRSP) Provides PKR16,997,000 to Chitral Government",
     },
   ],
 ];
-
-const label ={
-  label:"",
-  type:""
-}
 
 const Hero = () => {
   const [Active, setActive] = useState("FirstCard");
 
   return (
-    
     <div className="container mt-20">
-      <div >
-        <div className="bg-primary p-8 py-14 transition ease-in-out rounded-md h">
+      <div className="">
+        <div className="bg-primary p-8 py-14 transition ease-in-out rounded-md">
           {Active === "FirstCard" && <HeroCard data={data} />}
           {Active === "SecondCard" && <Card data={data} />}
-          <div className="flex pt-8 space-x-3">
+          <div className="flex pt-8 space-x-3 ">
             <button
               onClick={() => setActive("FirstCard")}
               className="h-2 w-12 bg-white opacity-40 border-primary focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"

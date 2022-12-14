@@ -27,13 +27,13 @@ const Gallery = () => {
   return (
     <div>
       <CarouselProvider
-        naturalSlideWidth={114}
+        naturalSlideWidth={115}
         naturalSlideHeight={100}
         totalSlides={2}
       >
-        <Slider>
+        <Slider className="xl:h-[72rem] lg:h-[58rem] md:h-[51rem] sm:h-[46rem] h-[55rem]">
           <Slide index={0}>
-            <div className="py-5 overflow-hidden container">
+            <div className="py-5 container">
               {data[0].map((item: any, index: any) => {
                 return (
                   <div key={index} className="text-center mb-16">
@@ -56,7 +56,7 @@ const Gallery = () => {
                 );
               })}
               <div>
-                <div className="grid grid-cols-4 sm:gap-2 md:gap-2 lg:gap-2 gap-2 cursor-pointer">
+                <div className="grid grid-cols-4 sm:gap-2 md:gap-2 lg:gap-2 gap-2 cursor-pointer h-full">
                   <div>
                     <Image
                       src="/image5.png"
@@ -228,7 +228,7 @@ const Gallery = () => {
             </div>
           </Slide>
         </Slider>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center lg:mt-8 md:mt-8 sm:mt-4 mt-3">
           <ButtonBack className="border-primary border-solid border-2 py-3 px-4 rounded ">
             <svg
               width="14"

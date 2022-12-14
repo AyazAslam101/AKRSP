@@ -39,7 +39,8 @@ const Navbar = () => {
                         href="#"
                         className="font-medium text-xl text-secondary hover:text-primary focus:text-primary whitespace-nowrap p-4 cursor-pointer flex items-center"
                       >
-                        {item.name}
+                       {item.name}
+                       
                         <svg
                           className="fill-current h-6 w-6"
                           xmlns="http://www.w3.org/2000/svg"

@@ -115,9 +115,12 @@ const Footer = () => {
                       <div>
                         {list?.menu?.map((items: any, key: any) => (
                           <div key={key}>
-                            <p className="text-primary font-medium text-xl mt-2">
+                            <a
+                              href="#"
+                              className="text-primary font-medium text-xl mt-2"
+                            >
                               {items?.name}
-                            </p>
+                            </a>
                             <div>
                               {items?.order?.map((items: any, key: any) => (
                                 <div key={key}>

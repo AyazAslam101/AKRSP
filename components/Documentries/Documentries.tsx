@@ -11,7 +11,7 @@ const Documentries = () => {
       <div className="lg:grid lg:grid-cols-3 items-center md:justify-center justify-center flex-rows grid md:grid-cols-2 lg:justify-evenly">
         <div className="bg-playerbg px-3 py-10 ml-2 mr-2 mt-6 mb-10 cursor-pointer">
         <Image
-            src="/image14.png"
+            src="/image15.png"
             width={450}
             height={100}
             alt="alt"
