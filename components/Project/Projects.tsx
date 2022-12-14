@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import Cards from "../Card/Cards";
 
 function Projects() {
-
   const sliderDiv = useRef<HTMLDivElement | null>(null);
 
   const handleSlide = (direction: string) => {
@@ -10,17 +9,15 @@ function Projects() {
     if (sliderDiv.current) {
       const { scrollLeft, clientWidth } = sliderDiv.current;
       const scrollTo =
-        direction == 'left'
+        direction == "left"
           ? Math.floor(scrollLeft - clientWidth)
           : Math.floor(scrollLeft + clientWidth);
 
-
       if (scrollTo >= scrollWidth) {
-        sliderDiv.current.scrollTo({ left: 0, behavior: 'smooth' });
+        sliderDiv.current.scrollTo({ left: 0, behavior: "smooth" });
       } else {
-        sliderDiv.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
+        sliderDiv.current.scrollTo({ left: scrollTo, behavior: "smooth" });
       }
-
     }
   };
 
@@ -60,14 +57,13 @@ function Projects() {
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
       readMore: "Real more",
     },
-
   ];
   return (
     <div className="py-5 mt-32">
       <h2 className="text-4xl font-bold mb-6">Projects</h2>
       <div className="flex mt-4 items-center justify-between items-center">
         <div className="mb-5">
-        <button className="border-primary focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3 mr-3">
+          <button className="border-primary focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3 mr-3">
             ONGOING
           </button>
           <button className="border-primary focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3">
@@ -75,9 +71,12 @@ function Projects() {
           </button>
         </div>
         <div className="flex lg:mr-4">
-          <button className="border-primary border-solid border-2 py-2 px-3 rounded" onClick={() => {
-            handleSlide('left')
-          }} >
+          <button
+            className="border-primary border-solid border-2 py-2 px-3 rounded"
+            onClick={() => {
+              handleSlide("left");
+            }}
+          >
             <svg
               width="16"
               height="16"
@@ -93,9 +92,12 @@ function Projects() {
               />
             </svg>
           </button>
-          <button className="border-primary border-solid border-2 py-2 px-3 rounded ml-3" onClick={() => {
-            handleSlide('right')
-          }} >
+          <button
+            className="border-primary border-solid border-2 py-2 px-3 rounded ml-3"
+            onClick={() => {
+              handleSlide("right");
+            }}
+          >
             <svg
               width="14"
               height="16"
@@ -121,7 +123,7 @@ function Projects() {
         {projects.map((project, index) => {
           const { img, description, title, readMore } = project;
           return (
-            <div key={index} className='w-full' >
+            <div key={index} className="w-full">
               <Cards
                 img={img}
                 description={description}

@@ -8,9 +8,9 @@ function Cards({ img, title, description, readMore,}: any) {
       <div className="mb-2">
         <Image src={img} alt="alt" width={400} height={100} />
       </div>
-      <div className="mt-3 px-2">
+      <div className="mt-3">
         <h6 className="font-medium mb-2 text-xl h-16">{title}</h6>
-        <p className="text-base font-normal	">{description}</p>
+        <p className="text-base font-normal">{description}</p>
         <button className="mt-2 text-lg py-2 rounded text-primary flex items-center">
           {readMore}
           <svg

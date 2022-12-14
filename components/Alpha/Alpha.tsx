@@ -135,8 +135,8 @@ const Alpha = () => {
           Where <span className="text-primary">AKRSP</span> Work
         </p>
       </div>
-      <div className="relative flex align-end">
-        <div className="absolute flex justify-center items-center -ml- w-px  xl:h-[26rem] lg:h-[32rem]  lg:visible md:invisible sm:invisible invisible lg:mt-12 bg-primary rounded-full"></div>
+      <div className="relative flex">
+        <div className="absolute flex justify-center items-center w-px  xl:h-[26rem] lg:h-[32rem]  lg:visible md:invisible sm:invisible invisible lg:mt-12 bg-primary rounded-full"></div>
       </div>
       <div className="lg:flex flex-col md:flex-row sm:flex-row flex-row">
         <div>
@@ -161,7 +161,7 @@ const Alpha = () => {
             </div>
           ))}
         </div>
-        <div className="mx-auto lg:-mt-6 cursor-pointer relative">
+        <div className="ml-auto lg:-mt-6 cursor-pointer relative">
           <div className="xl:block lg:blck md:hidden sm:hidden hidden">
             <div className="absolute left-64 bottom-52">
               <Target />
