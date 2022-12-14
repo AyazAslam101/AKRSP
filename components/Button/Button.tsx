@@ -35,7 +35,7 @@ const Button = (props: {
           </button>
 
           {navigation.main.map((item: any, key: any) => (
-            <Menu as="div" className="relative block text-left">
+            <Menu as="div" key={key} className="relative block text-left">
               <div>
                 <Menu.Button className="inline-flex font-medium text-xl text-secondary hover:text-primary focus:text-primary whitespace-nowrap p-4 cursor-pointer flex items-center focus:outline-none ">
                   {item.name}

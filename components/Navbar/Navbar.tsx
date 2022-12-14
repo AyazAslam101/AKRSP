@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { type } from "os";
+import Link from "next/link";
 
 const navigation = {
   main: [
@@ -79,21 +80,22 @@ const Navbar = () => {
           <div className="py-5 container lg:px-10 lg:pr-5 px-9 ">
             <div className="flex-shrink-0 lg:flex sm:block justify-center items-baseline justify-between">
               <div>
-                <a href="/">
+                <Link href="/">
                   <Image
                     src="/Logo.png"
                     alt="Picture of the author"
                     width={100}
                     height={60}
                   />
-                </a>
+                </Link>
               </div>
               <div className="xl:block hidden">
                 <div className="flex">
-                  {navigation.main.map((item) => {
+                  {navigation.main.map((item,key) => {
                     return (
                       <Menu
                         as="div"
+                        key={key}
                         className="relative inline-block text-left"
                       >
                         <div>
@@ -121,9 +123,9 @@ const Navbar = () => {
                           >
                             <Menu.Items className="absolute -right-10 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                               <div className="py-1">
-                                {item?.sub_main?.map((items) => {
+                                {item?.sub_main?.map((items,key) => {
                                   return (
-                                    <Menu.Item>
+                                    <Menu.Item key={key}>
                                       {({ active }) => (
                                         <a
                                           href="#"
