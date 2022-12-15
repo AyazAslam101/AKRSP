@@ -167,7 +167,7 @@ const Alpha = () => {
         <div
           className="ml-auto lg:-mt-6 cursor-pointer relative"
           data-aos="zoom-in-down"
-          data-aos-duration="2000"
+          data-aos-duration="800"
         >
           <div className="xl:block lg:blck md:hidden sm:hidden hidden">
             <div className="absolute left-64 bottom-52">

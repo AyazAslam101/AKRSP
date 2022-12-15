@@ -10,7 +10,7 @@ const Documentries = () => {
   }, []);
 
   return (
-    <div className="py-5" data-aos="zoom-out-up" data-aos-duration="2000">
+    <div className="py-5" data-aos="zoom-out-up" data-aos-duration="800">
       <div>
         <h2 className="text-3xl font-bold mb-1">MEDIA / DOCUMENTARIES</h2>
       </div>

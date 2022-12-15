@@ -37,7 +37,7 @@ const Gallery = () => {
         naturalSlideHeight={100}
         totalSlides={2}
         data-aos="zoom-in-up"
-        data-aos-duration="2000"
+        data-aos-duration="800"
       >
         <Slider className="xl:h-[72rem] lg:h-[58rem] md:h-[51rem] sm:h-[46rem] h-[55rem]">
           <Slide index={0}>

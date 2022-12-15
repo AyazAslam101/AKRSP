@@ -17,7 +17,7 @@ function SideBar() {
           data-aos="flip-up"
         >
           <div>
-            <button className="cursor-pointer w-10 flex justify-center">
+            <button className="cursor-pointer w-10 px-4 flex justify-center">
               <a href="#">
                 <User />
               </a>

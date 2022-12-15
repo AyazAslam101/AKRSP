@@ -28,7 +28,7 @@ const Hero = () => {
   const [Active, setActive] = useState("FirstCard");
 
   return (
-       <div className="container mt-20" data-aos="fade-down" data-aos-duration="2000">
+       <div className="container mt-20" data-aos="fade-down" data-aos-duration="800">
       <div className="">
         <div className="bg-primary p-8 py-14 transition ease-in-out rounded-md">
           {Active === "FirstCard" ? <HeroCard data={data}></HeroCard> : <Card data={data} />}
