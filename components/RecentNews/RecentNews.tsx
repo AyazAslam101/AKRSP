@@ -1,14 +1,20 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Image from "next/image";
 import { UserSvg, CalendarSvg } from "../Icons/svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function RecentNews(props: {
   img: any;
   name: any;
   description: any;
   date: any;
 }) {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="container rounded mmt-4 ">
+    <div className="container rounded mmt-4" data-aos="zoom-out-left" data-aos-duration="2000">
       <div className="w-[435px]">
         <div className="lg:mb-0 mb-4 cursor-pointer">
           <Image src={props.img} width={435} height={400} alt="alt " />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import {
   CarouselProvider,
@@ -8,8 +8,14 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Gallery = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   const data = [
     [
       {
@@ -32,7 +38,7 @@ const Gallery = () => {
         totalSlides={2}
       >
         <Slider className="xl:h-[72rem] lg:h-[58rem] md:h-[51rem] sm:h-[46rem] h-[55rem]">
-          <Slide index={0}>
+          <Slide index={0} data-aos="zoom-in-down" data-aos-duration="200">
             <div className="py-5 container">
               {data[0].map((item: any, index: any) => {
                 return (
@@ -129,7 +135,7 @@ const Gallery = () => {
               </div>
             </div>
           </Slide>
-          <Slide index={1}>
+          <Slide index={1} data-aos="zoom-in-up">
             <div className="py-5 overflow-hidden container">
               {data[1].map((item: any, index: any) => {
                 return (

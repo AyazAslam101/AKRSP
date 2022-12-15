@@ -1,7 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect} from "react";
 import Cards from "../Card/Cards";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+ 
 function Projects() {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   const sliderDiv = useRef<HTMLDivElement | null>(null);
 
   const handleSlide = (direction: string) => {
@@ -59,7 +67,7 @@ function Projects() {
     },
   ];
   return (
-    <div className="py-5 mt-32">
+    <div className="py-5 mt-32"  data-aos="fade-right" data-aos-duration="2000">
       <h2 className="text-4xl font-bold mb-6">Projects</h2>
       <div className="flex mt-4 items-center justify-between items-center">
         <div className="mb-5">

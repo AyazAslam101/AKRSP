@@ -1,8 +1,14 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Chip from "../Chip/Chip";
 import RecentNews from "./RecentNews";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Slider() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   const sliderDiv = useRef<HTMLDivElement | null>(null);
 
   const handleSlide = (direction: string) => {
@@ -148,7 +154,11 @@ function Slider() {
     },
   ];
   return (
-    <div className="container mb-8">
+    <div
+      className="container mb-8"
+      data-aos="fade-left"
+      data-aos-duration="2000"
+    >
       <div>
         <h2 className="text-4xl font-bold">Recent News</h2>
         <div className="flex mt-4 justify-between items-baseline">
@@ -156,13 +166,13 @@ function Slider() {
             {data.map((item, index) => {
               return (
                 <Chip
-                key={index}
-                value={item.value}
-                isActive={index === 0}
-                onClick={()=>handleClick(item.value)}
-              >
-                {item.label}
-              </Chip>
+                  key={index}
+                  value={item.value}
+                  isActive={index == 0}
+                  onClick={() => handleClick(item.value)}
+                >
+                  {item.label}
+                </Chip>
               );
             })}
           </div>

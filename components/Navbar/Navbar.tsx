@@ -10,7 +10,7 @@ import Link from "next/link";
 const navigation = {
   main: [
     {
-      name: "About us",
+      name: "About us",type: "show-arrow",
       sub_main: [
         { name: "Who We Are", href: "/who-we-are", type: "show-arrow" },
         { name: "Governance", href: "/governance" },
@@ -131,7 +131,7 @@ const Navbar = () => {
                                           href="#"
                                           className={classNames(
                                             active
-                                              ? "bg-gray-100 text-gray-900"
+                                              ? "bg-gray-100 text-primary"
                                               : "text-gray-700",
                                             "block px-4 py-2 text-sm"
                                           )}

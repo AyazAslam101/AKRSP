@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import HeroCard from "./HeroCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const data = [
   [
@@ -33,11 +28,10 @@ const Hero = () => {
   const [Active, setActive] = useState("FirstCard");
 
   return (
-    <div className="container mt-20">
+       <div className="container mt-20" data-aos="fade-down" data-aos-duration="2000">
       <div className="">
         <div className="bg-primary p-8 py-14 transition ease-in-out rounded-md">
-          {Active === "FirstCard" && <HeroCard data={data} />}
-          {Active === "SecondCard" && <Card data={data} />}
+          {Active === "FirstCard" ? <HeroCard data={data}></HeroCard> : <Card data={data} />}
           <div className="flex pt-8 space-x-3 ">
             <button
               onClick={() => setActive("FirstCard")}
@@ -61,5 +55,6 @@ const Hero = () => {
     </div>
   );
 };
+
 
 export default Hero;

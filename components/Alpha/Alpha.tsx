@@ -129,27 +129,23 @@ const data = {
 
 const Alpha = () => {
   return (
-    <div className="py-5 container mt-20">
+<div className="py-5 container mt-20">
       <div>
         <p className="text-4xl font-semibold mb-4">
           Where <span className="text-primary">AKRSP</span> Work
         </p>
       </div>
-      <div className="relative flex">
-        <div className="absolute flex justify-center items-center w-px  xl:h-[26rem] lg:h-[32rem]  lg:visible md:invisible sm:invisible invisible lg:mt-12 bg-primary rounded-full"></div>
-      </div>
       <div className="lg:flex flex-col md:flex-row sm:flex-row flex-row">
         <div>
+        <div className="absolute w-px xl:h-[26rem] lg:h-[32rem] lg:visible md:invisible sm:invisible invisible lg:mt-14 bg-primary rounded-full mt-10"></div>
           {data?.main?.map((item, key) => (
-            <div key={key} className="px-3 py-5 flex items-center ml-8">
-              <div className="bg-svgbg border-1 rounded-full p-4 relative align-center">
+            <div key={key} className="py-5 flex items-center relative">
                 <div
-                  className={
-                    item.IsDone
-                      ? "absolute right-24 flex items-center lg:w-3 lg:h-3 lg:visible md:invisible sm:invisible invisible bg-primary mt-2 rounded-full"
-                      : "absolute right-24 lg:w-3 lg:w-3 lg:h-3 lg:visible md:invisible sm:invisible invisible  border-primary mt-2 border-2 rounded-full bg-white"
-                  }
+              className={
+                `absolute lg:w-3 lg:w-3 lg:h-3 lg:visible md:invisible sm:invisible invisible  border-primary mt-2 border-2 rounded-full  left-0 translate-x-[-45%] ${item.IsDone ? 'bg-primary' : "bg-white"}`
+              }
                 ></div>
+              <div className="bg-svgbg border-1 rounded-full p-4 align-center ml-8">
                 <item.icon />
               </div>
               <div className="ml-3">
@@ -157,7 +153,7 @@ const Alpha = () => {
                   {item?.total_num}
                 </p>
                 <p className="text-lg"> {item?.name}</p>
-              </div>
+                </div>
             </div>
           ))}
         </div>

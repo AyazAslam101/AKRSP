@@ -1,6 +1,14 @@
+import React,{useEffect} from "react"
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const Header = () => {
+  
+    useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+    }, []);
   return (
     <>
       <div className="container mx-auto p-10 pr-2">
@@ -23,7 +31,12 @@ const Header = () => {
               </p>
             </div>
             <div>
-              <div className="md:flex md:flex-col hidden gap-3 pt-10 mx-auto">
+              <div
+                className="md:flex md:flex-col hidden gap-3 pt-10 mx-auto"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
                 <div className="grid grid-cols-[350px_600px]">
                   <div className="cursor-pointer">
                     <Image
