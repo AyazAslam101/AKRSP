@@ -67,7 +67,7 @@ function Projects() {
     },
   ];
   return (
-    <div className="py-5 mt-32"  data-aos="fade-right" data-aos-duration="2000">
+    <div className="py-5 mt-32" data-aos="fade-right" data-aos-duration="2000">
       <h2 className="text-4xl font-bold mb-6">Projects</h2>
       <div className="flex mt-4 items-center justify-between items-center">
         <div className="mb-5">

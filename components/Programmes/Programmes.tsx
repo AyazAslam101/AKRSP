@@ -15,7 +15,7 @@ const Programmes = () => {
         <div
           className="lg:grid lg:grid-cols-2 md:block sm:block block md:gap-4 lg:gap-4 md:gap-4 sm:gap-4 gap-4  items-center"
           data-aos="fade-right"
-          data-aos-duration="500"
+          data-aos-duration="2000"
         >
           <div className="h-full rounded object-cover mb-3 flex-none">
             <Image
@@ -49,7 +49,7 @@ const Programmes = () => {
         <div
           className="lg:grid lg:grid-cols-2 md:block md:gap-4 lg:gap-4 items-center mt-16"
           data-aos="fade-left"
-          data-aos-duration="500"
+          data-aos-duration="2000"
         >
           <div className="lg:pb-8">
             <h1 className="text-2xl text-primary cursor-pointer lg:mt-6 md:mt-2">

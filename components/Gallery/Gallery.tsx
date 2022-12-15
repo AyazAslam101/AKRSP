@@ -36,9 +36,11 @@ const Gallery = () => {
         naturalSlideWidth={115}
         naturalSlideHeight={100}
         totalSlides={2}
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
       >
         <Slider className="xl:h-[72rem] lg:h-[58rem] md:h-[51rem] sm:h-[46rem] h-[55rem]">
-          <Slide index={0} data-aos="zoom-in-down" data-aos-duration="200">
+          <Slide index={0}>
             <div className="py-5 container">
               {data[0].map((item: any, index: any) => {
                 return (
@@ -135,7 +137,7 @@ const Gallery = () => {
               </div>
             </div>
           </Slide>
-          <Slide index={1} data-aos="zoom-in-up">
+          <Slide index={1}>
             <div className="py-5 overflow-hidden container">
               {data[1].map((item: any, index: any) => {
                 return (
