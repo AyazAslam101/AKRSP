@@ -12,10 +12,11 @@ const Chip: FC<ChipProps> = ({ children, onClick, isActive, value }) => {
     <button
       onClick={() => onClick(value)}
       className={`lg:px-8 lg:py-3 md:px-6 mr-2 md:py-4 sm:px-4 sm:py-2 hover:bg-primary hover:text-white mt-2 px-4 py-2 focus:text-white focus:bg-primary rounded-full cursor-pointer whitespace-nowrap ${
-        isActive
+        false
           ? "bg-primary text-white focus:z-10 focus:ring-1 text-primary mt-3"
           : "focus:z-10 focus:ring-1 text-primary mt-3 bg-playerbg text-buttontext"
-      }`}
+      }`
+    }
     >
       {children}
     </button>

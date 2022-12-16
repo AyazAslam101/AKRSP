@@ -234,7 +234,7 @@ function Slider() {
           })
           .map((slider, index) => {
             return (
-              <div key={index} className="w-full">
+              <div key={index}>
                 <RecentNews
                   key={index}
                   img={slider.img}

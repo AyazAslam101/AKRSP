@@ -11,9 +11,9 @@ const Header = () => {
     }, []);
   return (
     <>
-      <div className="container mx-auto p-10 pr-2">
+      <div className="container mx-auto lg:px-9 px-4 py-8">
         <div className="py-5 overflow-hidden pt-20">
-          <div className="lg:grid lg:grid-cols-2 sm:block md:block block gap-32">
+          <div className="xl:grid xl:grid-cols-2 lg:block sm:block md:block block gap-36">
             <div className="lg:mt-32 md:10 sm:mt-10 mt-4">
               <h2 className="header-title">
                 Aga Khan Rural Support Programme <br />

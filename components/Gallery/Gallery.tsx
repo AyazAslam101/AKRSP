@@ -39,7 +39,7 @@ const Gallery = () => {
         data-aos="zoom-in-up"
         data-aos-duration="800"
       >
-        <Slider className="xl:h-[72rem] lg:h-[58rem] md:h-[51rem] sm:h-[46rem] h-[55rem]">
+        <Slider className="xl:h-[72rem] lg:h-[58rem] md:h-[51rem] sm:h-[46rem] h-[46rem]">
           <Slide index={0}>
             <div className="py-5 container">
               {data[0].map((item: any, index: any) => {
@@ -150,10 +150,10 @@ const Gallery = () => {
                     </h4>
                     <p className="text-base font-weight font-normal tracking-wide leading-7 container lg:px-20 text-center mt-4">
                       Funded by: Government of KP, PPAF, Swiss Agency for
-                      Development and Cooperation (SDC) Project Duration: 3
+                      Development and Cooperation Project Duration: 3
                       Years (August 2014 - November 2017) Geographic Focus: All
                       24 Union Councils of Chitral District To provide the
-                      communities with access to clean and renewable energy for
+                      communities with access to clean and energy for
                       domestic and commercial purposes To promote productive use
                       of energy for generating income opportunities for the
                       rural households
@@ -162,8 +162,8 @@ const Gallery = () => {
                 );
               })}
               <div>
-                <div className="grid grid-cols-4 sm:gap-2 md:gap-2 lg:gap-2 gap-2 cursor-pointer">
-                  <div>
+              <div className="grid grid-cols-4 sm:gap-2 md:gap-2 lg:gap-2 gap-2 cursor-pointer h-full">
+                  <div data-aos="fade-right" data-aos-duration="800">
                     <Image
                       src="/image5.png"
                       width={500}
@@ -171,7 +171,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-down" data-aos-duration="800">
                     <Image
                       src="/image6.png"
                       width={500}
@@ -179,7 +179,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-down" data-aos-duration="800">
                     <Image
                       src="/image9.png"
                       width={500}
@@ -187,7 +187,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-left" data-aos-duration="800">
                     <Image
                       src="/image11.png"
                       width={500}
@@ -195,7 +195,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-right" data-aos-duration="800">
                     <Image
                       src="/image7.png"
                       width={500}
@@ -205,7 +205,7 @@ const Gallery = () => {
                     />
                   </div>
 
-                  <div className="relative">
+                  <div className="relative" data-aos="fade-up" data-aos-duration="800">
                     <Image
                       src="/image8.png"
                       width={500}
@@ -214,7 +214,7 @@ const Gallery = () => {
                       className="absolute xl:-top-42 lg:-top-30 md:-top-26 sm:-bottom-0 bottom-0"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-up" data-aos-duration="800">
                     <Image
                       src="/image10.png"
                       width={500}
@@ -222,7 +222,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div className="relative">
+                  <div className="relative" data-aos="fade-left" data-aos-duration="800">
                     <Image
                       src="/image12.png"
                       width={500}
