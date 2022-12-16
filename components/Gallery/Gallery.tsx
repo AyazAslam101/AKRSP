@@ -12,10 +12,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Gallery = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
   const data = [
     [
       {
@@ -30,6 +26,10 @@ const Gallery = () => {
       },
     ],
   ];
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div>
       <CarouselProvider
@@ -65,7 +65,7 @@ const Gallery = () => {
               })}
               <div>
                 <div className="grid grid-cols-4 sm:gap-2 md:gap-2 lg:gap-2 gap-2 cursor-pointer h-full">
-                  <div>
+                  <div data-aos="fade-right" data-aos-duration="800">
                     <Image
                       src="/image5.png"
                       width={500}
@@ -73,7 +73,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-down" data-aos-duration="800">
                     <Image
                       src="/image6.png"
                       width={500}
@@ -81,7 +81,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-down" data-aos-duration="800">
                     <Image
                       src="/image9.png"
                       width={500}
@@ -89,7 +89,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-left" data-aos-duration="800">
                     <Image
                       src="/image11.png"
                       width={500}
@@ -97,7 +97,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-right" data-aos-duration="800">
                     <Image
                       src="/image7.png"
                       width={500}
@@ -107,7 +107,7 @@ const Gallery = () => {
                     />
                   </div>
 
-                  <div className="relative">
+                  <div className="relative" data-aos="fade-up" data-aos-duration="800">
                     <Image
                       src="/image8.png"
                       width={500}
@@ -116,7 +116,7 @@ const Gallery = () => {
                       className="absolute xl:-top-42 lg:-top-30 md:-top-26 sm:-bottom-0 bottom-0"
                     />
                   </div>
-                  <div>
+                  <div data-aos="fade-up" data-aos-duration="800">
                     <Image
                       src="/image10.png"
                       width={500}
@@ -124,7 +124,7 @@ const Gallery = () => {
                       alt="akrsp"
                     />
                   </div>
-                  <div className="relative">
+                  <div className="relative" data-aos="fade-left" data-aos-duration="800">
                     <Image
                       src="/image12.png"
                       width={500}

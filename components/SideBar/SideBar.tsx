@@ -13,11 +13,11 @@ function SideBar() {
       <div className="fixed right-2 bottom-80 xl:block lg:hidden md:hidden sm:hidden hidden z-10">
         <div
           className="bg-primary py-3 w-12 grid grid-rows-3 justify-center gap-6 rounded"
-          data-aos-duration="2000"
+          data-aos-duration="800"
           data-aos="flip-up"
         >
           <div>
-            <button className="cursor-pointer w-10 px-4 flex justify-center">
+            <button className="cursor-pointer w-10  flex justify-center">
               <a href="#">
                 <User />
               </a>

@@ -35,7 +35,7 @@ const Header = () => {
                 className="md:flex md:flex-col hidden gap-3 pt-10 mx-auto"
                 data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
+                data-aos-duration="800"
               >
                 <div className="grid grid-cols-[350px_600px]">
                   <div className="cursor-pointer">

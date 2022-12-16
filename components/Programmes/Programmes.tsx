@@ -41,7 +41,7 @@ const Programmes = () => {
               These LSOs take on a multi-sector agenda in partnership with a
               wide array of partners including the local government departments.
             </p>
-            <button className="bg-white px-4 py-3 border-primary border-2 rounded-md focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 text-primary text-lg ">
+            <button className="bg-white px-4 py-3 border-primary border-2 rounded-md hover:bg-primary hover:text-white focus:bg-primary focus:text-white focus:z-10 focus:ring-primary-500 focus:border-2 text-primary text-lg ">
               Read More
             </button>
           </div>
@@ -61,13 +61,12 @@ const Programmes = () => {
             <p className="text-xl tracking-wide font-medium max-w-xl leading-8 lg:mb-6 md:mb-6 sm:mb-4 xl:mt-6 lg:mt-3 md:mt-4 sm:mt-4 md:mt-2 mt-2 mb-1">
               Sustained improvements in the quality of life GBC population
               hinges upon inclusive economic growth and shared employment
-              opportunities. AKRSP efforts in developing economic
-              infrastructure (e.g. roads, irrigation and land development
-              projects), promoting agricultural productivity, and improving
-              farming skills have been instrumental in this regard by increasing
-              farm surplus.
+              opportunities. AKRSP efforts in developing economic infrastructure
+              (e.g. roads, irrigation and land development projects), promoting
+              agricultural productivity, and improving farming skills have been
+              instrumental in this regard by increasing farm surplus.
             </p>
-            <button className="bg-white px-4 py-3 border-primary border-2 rounded-md focus:bg-primary focus:text-white focus:z-10 focus:ring-2 focus:ring-primary-500 focus:border-2 text-primary text-lg">
+            <button className="bg-white px-4 py-3 border-primary border-2 rounded-md hover:bg-primary hover:text-white focus:bg-primary focus:text-white focus:z-10 focus:ring-primary-500 focus:border-2 text-primary text-lg">
               Read More
             </button>
           </div>

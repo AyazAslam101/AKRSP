@@ -19,7 +19,7 @@ const data = [
       update: "Latest Updates",
       created_at: "26-09-2022",
       description:
-        "Aga Khan Rural Support Programme (AKRSP) Provides PKR16,997,000 to Chitral Government",
+        "Aga Khan Rural Support Programme (AKRSP) Provides PPE worth PKR16,997,000 to Chitral Government",
     },
   ],
 ];

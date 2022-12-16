@@ -69,7 +69,7 @@ const navigation = {
           href: "/",
           menu: [
             {
-              name: "Projects",
+              name: "Gallery",
               order: [
                 { name: "Photo Gallery", href: "/Ongoing" },
                 { name: "Video Gallery", href: "/Accomplished" },
@@ -114,10 +114,10 @@ const Footer = () => {
                       </p>
                       <div>
                         {list?.menu?.map((items: any, key: any) => (
-                          <div key={key}>
+                          <div key={key} className="mt-5">
                             <a
                               href="#"
-                              className="text-primary font-medium text-xl mt-2"
+                              className="text-primary font-medium text-xl"
                             >
                               {items?.name}
                             </a>

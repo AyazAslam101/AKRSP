@@ -157,7 +157,7 @@ function Slider() {
     <div
       className="container mb-8"
       data-aos="fade-left"
-      data-aos-duration="2000"
+      data-aos-duration="800"
     >
       <div>
         <h2 className="text-4xl font-bold">Recent News</h2>
@@ -234,7 +234,7 @@ function Slider() {
           })
           .map((slider, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="w-full">
                 <RecentNews
                   key={index}
                   img={slider.img}
