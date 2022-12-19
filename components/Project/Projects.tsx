@@ -71,7 +71,6 @@ function Projects() {
       description:
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
       readMore: "Real more",
-      
     },
   ];
   const data = [
@@ -89,9 +88,10 @@ function Projects() {
       <h2 className="text-4xl font-bold mb-6">Projects</h2>
       <div className="flex mt-4 items-center justify-between items-center">
         <div className="mb-5">
-          {data.map((item: any) => {
+          {data.map((item: any, index) => {
             return (
               <button
+                key={index}
                 onClick={() => handleClick(item.value)}
                 className="border-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white focus:z-10 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3 mr-3"
               >

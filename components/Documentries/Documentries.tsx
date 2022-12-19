@@ -30,9 +30,9 @@ const Documentries = () => {
         <h2 className="text-3xl font-bold mb-1">MEDIA / DOCUMENTARIES</h2>
       </div>
       <div className="lg:grid lg:grid-cols-3 items-center md:justify-center mt-10 mb-16 justify-center flex-rows grid md:grid-cols-2 lg:justify-evenly">
-        {data.map((data: any) => {
+        {data.map((data: any,index) => {
           return (
-            <div className="bg-playerbg px-3 py-7 mb-6 ml-2 mr-2  cursor-pointer">
+            <div key={index} className="bg-playerbg px-3 py-7 mb-6 ml-2 mr-2  cursor-pointer">
               <Player
                 url={data.url}
                 width="100%"
