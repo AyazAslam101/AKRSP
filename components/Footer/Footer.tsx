@@ -151,12 +151,12 @@ const Footer = () => {
           </div>
           <div className="flex justify-center text-center">
             {navigation.main.map((item: any, key: any) => (
-              <div key={key} className="px-1 py-2 flex divide-x">
+              <div key={key} className="px-1 py-2 flex ">
                 <a
                   href="#"
-                  className="text-sm font-normal text-white flex whitespace-nowrap"
+                  className="text-sm font-normal text-white flex whitespace-nowrap after:ml-1 after:content-['|']"
                 >
-                  {item.name} <span className="ml-1">|</span>
+                  <span>{item.name} </span>
                 </a>
               </div>
             ))}

@@ -1,9 +1,14 @@
-import React, { useRef,useEffect} from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Cards from "../Card/Cards";
 import AOS from "aos";
 import "aos/dist/aos.css";
- 
+
 function Projects() {
+  const [showEvents, setShowEvents] = useState("ongoing");
+  const handleClick = (value: string) => {
+    setShowEvents(value);
+    console.log(value);
+  };
 
   useEffect(() => {
     AOS.init();
@@ -43,6 +48,7 @@ function Projects() {
       description:
         "This 48-month EU funded project, started in February 2014, is now approaching to its end and will be closed on December. ",
       readMore: "Real more",
+      value: "accomplished",
     },
     {
       img: "/project13.png",
@@ -57,6 +63,7 @@ function Projects() {
       description:
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
       readMore: "Real more",
+      value: "accomplished",
     },
     {
       img: "/project14.png",
@@ -64,6 +71,17 @@ function Projects() {
       description:
         "PEDO awarded the design, construction, operation and maintenance of 55 number of projects in Chitral to AKRSP.",
       readMore: "Real more",
+      
+    },
+  ];
+  const data = [
+    {
+      label: "ONGOING",
+      value: "ongoing",
+    },
+    {
+      label: "ACCOMPLISHED",
+      value: "accomplished",
     },
   ];
   return (
@@ -71,12 +89,16 @@ function Projects() {
       <h2 className="text-4xl font-bold mb-6">Projects</h2>
       <div className="flex mt-4 items-center justify-between items-center">
         <div className="mb-5">
-          <button className="border-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white focus:z-10 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3 mr-3">
-            ONGOING
-          </button>
-          <button className="border-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white focus:z-10 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3">
-            ACCOMPLISHED
-          </button>
+          {data.map((item: any) => {
+            return (
+              <button
+                onClick={() => handleClick(item.value)}
+                className="border-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white focus:z-10 focus:ring-primary-500 focus:border-2 border-2 px-4 py-2.5 rounded text-primary mt-3 mr-3"
+              >
+                {item.label}
+              </button>
+            );
+          })}
         </div>
         <div className="flex lg:mr-4">
           <button
@@ -125,22 +147,29 @@ function Projects() {
       </div>
 
       <div
-        className="mt-4 flex overflow-x-auto overflow-y-hidden scrollbar-hide mb-5 transition gap-6 w-full bg-transparent"
+        className="mt-4 flex overflow-x-auto overflow-y-hidden scrollbar-hide mb-5 transition gap-6 bg-transparent"
         ref={sliderDiv}
       >
-        {projects.map((project, index) => {
-          const { img, description, title, readMore } = project;
-          return (
-            <div key={index} className="w-full">
-              <Cards
-                img={img}
-                description={description}
-                title={title}
-                readMore={readMore}
-              />
-            </div>
-          );
-        })}
+        {projects
+          .filter((item) => {
+            if (showEvents === "ongoing") return item;
+            else if (showEvents === item.value) return item;
+            return;
+            console.log(item);
+          })
+          .map((project, index) => {
+            const { img, description, title, readMore } = project;
+            return (
+              <div key={index}>
+                <Cards
+                  img={img}
+                  description={description}
+                  title={title}
+                  readMore={readMore}
+                />
+              </div>
+            );
+          })}
       </div>
       <div className="container">
         <hr className="border-1 shadow w-h-screen mt-14 mb-14" />

@@ -10,7 +10,8 @@ import Link from "next/link";
 const navigation = {
   main: [
     {
-      name: "About us",type: "show-arrow",
+      name: "About us",
+      type: "show-arrow",
       sub_main: [
         { name: "Who We Are", href: "/who-we-are", type: "show-arrow" },
         { name: "Governance", href: "/governance" },
@@ -91,7 +92,7 @@ const Navbar = () => {
               </div>
               <div className="xl:block hidden">
                 <div className="flex">
-                  {navigation.main.map((item,key) => {
+                  {navigation.main.map((item, key) => {
                     return (
                       <Menu
                         as="div"
@@ -101,7 +102,6 @@ const Navbar = () => {
                         <div>
                           <Menu.Button className="inline-flex font-medium text-xl text-secondary hover:text-primary focus:text-primary whitespace-nowrap p-4 cursor-pointer flex items-center focus:outline-none ">
                             <a href="#">{item.name}</a>
-
                             {item.type === "show-arrow" && (
                               <ChevronDownIcon
                                 className="-mr-1 ml-2 h-5 w-5"
@@ -123,7 +123,7 @@ const Navbar = () => {
                           >
                             <Menu.Items className="absolute -right-10 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                               <div className="py-1">
-                                {item?.sub_main?.map((items,key) => {
+                                {item?.sub_main?.map((items, key) => {
                                   return (
                                     <Menu.Item key={key}>
                                       {({ active }) => (

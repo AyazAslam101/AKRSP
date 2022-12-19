@@ -223,7 +223,7 @@ function Slider() {
         </div>
       </div>
       <div
-        className="mt-4 flex overflow-x-auto overflow-y-hidden scrollbar-hide mb-5 transition gap-6 w-full bg-transparent"
+        className="mt-4 flex overflow-x-auto overflow-y-hidden scrollbar-hide mb-5 transition gap-6 w-full "
         ref={sliderDiv}
       >
         {slider

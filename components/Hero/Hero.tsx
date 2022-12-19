@@ -43,7 +43,7 @@ const Hero = () => {
           <div className="flex pt-8 space-x-3 ">
             <button
               onClick={() => setActive("FirstCard")}
-              className="h-2 w-12 bg-white opacity-40 border-primary focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
+              className="h-2 w-12 bg-white opacity-40 border-primary active:opacity-400 focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
             ></button>
             <button
               onClick={() => setActive("SecondCard")}

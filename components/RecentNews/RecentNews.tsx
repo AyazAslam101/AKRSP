@@ -14,7 +14,7 @@ function RecentNews(props: {
     AOS.refresh();
   }, []);
   return (
-    <div className="container rounded mt-4" data-aos="zoom-out-left" data-aos-duration="800">
+    <div className="container rounded mt-4">
       <div className="w-[435px]">
         <div className="lg:mb-0 mb-4 cursor-pointer">
           <Image src={props.img} width={435} height={400} alt="alt " />
