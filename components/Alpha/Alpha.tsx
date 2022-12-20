@@ -152,7 +152,7 @@ const Alpha = () => {
                   item.IsDone ? "bg-primary" : "bg-white"
                 }`}
               ></div>
-              <div className="bg-svgbg border-1 rounded-full p-4 align-center ml-8">
+              <div className="bg-svgbg border-1 rounded-full p-4 align-center lg:ml-8 ml-0">
                 <item.icon />
               </div>
               <div className="ml-3">
@@ -169,7 +169,7 @@ const Alpha = () => {
           data-aos="zoom-in-down"
           data-aos-duration="800"
         >
-          <div className="xl:block lg:blck md:hidden sm:hidden hidden">
+          <div className="xl:block lg:block md:hidden sm:hidden hidden">
             <div className="absolute left-64 bottom-52">
               <Target />
             </div>

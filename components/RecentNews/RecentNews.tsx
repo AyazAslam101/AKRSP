@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { UserSvg, CalendarSvg } from "../Icons/svg";
 import AOS from "aos";

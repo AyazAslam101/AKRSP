@@ -2,7 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  content: [
+  purge: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -31,6 +31,8 @@ module.exports = {
         playerbg: "#DBF0E4",
         lblack: "#353535",
         buttontext: "#2C2727;",
+        svgcolor:"#0C9A4A",
+        svghover:"#ffffff"
       },
       height: {
         128: "26rem",
@@ -38,10 +40,10 @@ module.exports = {
       },
     },
   },
+  variants: {
+    boxShadow: ['responsive', 'hover', 'focus'],  
+ },
   plugins: [
     require("tailwind-scrollbar-hide"),
-    plugin(function ({ addVariant }) {
-      addVariant("current", "&.active");
-    }),
   ],
 };

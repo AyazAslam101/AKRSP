@@ -9,11 +9,10 @@ body {
   padding: 0;
   margin: 0;
 }
-.header-title{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 52px;
-line-height: 67px;
+.header-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 67px;
 }
-  

@@ -1,25 +1,24 @@
 import React, { FC, useState } from "react";
-import Link from "next/link";
 export interface ChipProps {
-  children: React.ReactNode;
-  isActive?: boolean;
-  onClick: (value: string) => void;
-
-  value: string;
+  children?: React.ReactNode;
+  state: number;
+  onClick?: (value: string) => void | undefined;
+  item?: any;
+  index?: any;
 }
-const Chip: FC<ChipProps> = ({ children, onClick, isActive, value }) => {
+const Chip: FC<ChipProps> = ({ children, onClick, state, item, index }) => {
   return (
-    <button
-      onClick={() => onClick(value)}
-      className={`lg:px-8 lg:py-3 md:px-6 mr-2 md:py-4 sm:px-4 sm:py-2 hover:bg-primary hover:text-white mt-2 px-4 py-2 focus:text-white focus:bg-primary rounded-full cursor-pointer whitespace-nowrap ${
-        isActive
-          ? "bg-primary  text-white focus:ring-1 text-primary mt-3"
-          : "focus:ring-1 text-primary mt-3 bg-playerbg text-buttontext"
-      }`
-    }
-    >
-      {children}
-    </button>
+    <div>
+      <button
+        onClick={() => onClick(index)}
+        className={`btn-cli px-8 py-3 mr-2 hover:bg-primary hover:text-white mt-2 px-4 py-2 rounded-full cursor-pointer whitespace-nowrap ${
+          index === state ? "bg-primary text-white" : "bg-playerbg text-primary"
+        }
+      `}
+      >
+        {children}
+      </button>
+    </div>
   );
 };
 export default Chip;

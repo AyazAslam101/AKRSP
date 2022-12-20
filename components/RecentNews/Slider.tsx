@@ -97,7 +97,6 @@ function Slider() {
       value: "events",
       description: "Sadpara Development Project",
     },
-
     {
       img: "/Rectangle3.png",
       name: "Naeem Hassan",
@@ -127,7 +126,8 @@ function Slider() {
       description: "Community mobilisation paying off in Chitral",
     },
   ];
-  const data = [
+  const [active, setActive] = useState(0);
+  const [dataTabs, setDataTabs] = useState([
     {
       label: "All",
       value: "all",
@@ -152,6 +152,49 @@ function Slider() {
       label: "Videos",
       value: "videos",
     },
+  ]);
+  const navigate = (index: any) => {
+    setActive(index);
+  };
+  const label = [
+    {
+      icon: (props: any) => (
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 8 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...props}
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M6.02354 1.14328C6.39688 0.769938 7.00218 0.769938 7.37552 1.14328C7.74858 1.51633 7.74891 2.12107 7.37626 2.49453L3.66162 6.21729L7.37626 9.94004C7.74891 10.3135 7.74858 10.9182 7.37553 11.2913C7.00218 11.6646 6.39688 11.6646 6.02354 11.2913L0.949532 6.21729L6.02354 1.14328Z"
+          />
+        </svg>
+      ),
+      value: "first",
+    },
+    {
+      icon: (props: any) => (
+        <svg
+          width="14"
+          height="16"
+          viewBox="0 0 8 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...props}
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1.97646 10.8567C1.60312 11.2301 0.997816 11.2301 0.624475 10.8567C0.251422 10.4837 0.251093 9.87893 0.623739 9.50547L4.33838 5.78271L0.623738 2.05996C0.251092 1.6865 0.251422 1.08176 0.624475 0.708709C0.997816 0.335367 1.60312 0.335367 1.97646 0.708709L7.05047 5.78271L1.97646 10.8567Z"
+          />
+        </svg>
+      ),
+      value: "second",
+    },
   ];
   return (
     <div
@@ -162,63 +205,47 @@ function Slider() {
       <div>
         <h2 className="text-4xl font-bold">Recent News</h2>
         <div className="flex mt-4 justify-between items-baseline">
-          <div className="lg:flex md:grid md:grid-cols-3 grid-cols-2 mt-6 items-center text-xl">
-            {data.map((item, index) => {
+          <div className="flex flex-wrap mt-6 items-center text-xl">
+            {dataTabs.map((item, index) => {
               return (
-                <Chip
-                  key={index}
-                  value={item.value}
-                  isActive={index == 0}
-                  onClick={() => handleClick(item.value)}
-                >
-                  {item.label}
-                </Chip>
+                <div onClick={() => handleClick(item.value)}>
+                  <Chip
+                    key={index}
+                    item={item}
+                    onClick={navigate}
+                    index={index}
+                    state={active}
+                  >
+                    {item.label}
+                  </Chip>
+                </div>
               );
             })}
           </div>
-          <div className="flex lg:mr-4">
-            <button
-              className="border-primary border-solid border-2 py-2 px-3 rounded"
-              onClick={() => {
-                handleSlide("left");
-              }}
-            >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 8 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M6.02354 1.14328C6.39688 0.769938 7.00218 0.769938 7.37552 1.14328C7.74858 1.51633 7.74891 2.12107 7.37626 2.49453L3.66162 6.21729L7.37626 9.94004C7.74891 10.3135 7.74858 10.9182 7.37553 11.2913C7.00218 11.6646 6.39688 11.6646 6.02354 11.2913L0.949532 6.21729L6.02354 1.14328Z"
-                  fill="#0C9A4A"
-                />
-              </svg>
-            </button>
-            <button
-              className="border-primary border-solid border-2 py-2 px-3 rounded ml-3"
-              onClick={() => {
-                handleSlide("right");
-              }}
-            >
-              <svg
-                width="14"
-                height="16"
-                viewBox="0 0 8 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M1.97646 10.8567C1.60312 11.2301 0.997816 11.2301 0.624475 10.8567C0.251422 10.4837 0.251093 9.87893 0.623739 9.50547L4.33838 5.78271L0.623738 2.05996C0.251092 1.6865 0.251422 1.08176 0.624475 0.708709C0.997816 0.335367 1.60312 0.335367 1.97646 0.708709L7.05047 5.78271L1.97646 10.8567Z"
-                  fill="#0C9A4A"
-                />
-              </svg>
-            </button>
+          <div className="flex lg:-mr-4">
+            <div className="flex lg:mr-4">
+              {label.map((item: any) => (
+                <div
+                  className="first:mr-3"
+                  onClick={
+                    item.value === "first"
+                      ? () => handleSlide("left")
+                      : () => handleSlide("right")
+                  }
+                >
+                  <button
+                    key={item.name}
+                    className="border-primary border-solid border-2 py-2 px-3 rounded"
+                  >
+                    {item.name}
+                    <item.icon
+                      className="fill-primary"
+                      aria-hidden="true"
+                    />
+                  </button>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

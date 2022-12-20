@@ -12,8 +12,10 @@ function Cards({ img, title, description, readMore }: any) {
           <h6 className="font-medium mb-2 text-xl h-16">{title}</h6>
           <p className="text-base font-normal">{description}</p>
           <div>
-            <button className="mt-2 text-lg py-2 rounded text-primary flex items-center">
-              <span className="mr-2 hover:mr-3 transition-all">{readMore}</span>
+            <button className="mt-2 text-lg py-2 rounded text-black focus:text-primary hover:text-primary flex items-center">
+              <span className="mr-2 hover:mr-3 transition-all">
+                <a href="#">{readMore}</a>
+              </span>
               <svg
                 width="19"
                 height="19"

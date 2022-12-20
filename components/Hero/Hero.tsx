@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import HeroCard from "./HeroCard";
@@ -9,7 +9,7 @@ const data = [
   [
     {
       update: "Latest Updates",
-      created_at: "26-09-2021",
+      created_at: "26-09-2022",
       description:
         "Aga Khan Rural Support Programme (AKRSP) Provides PPE worth PKR16,997,000 to Sindh Government",
     },
@@ -17,46 +17,76 @@ const data = [
   [
     {
       update: "Latest Updates",
-      created_at: "26-09-2022",
+      created_at: "10-04-2010",
       description:
-        "Aga Khan Rural Support Programme (AKRSP) Provides PPE worth PKR16,997,000 to Chitral Government",
+        "Aga Khan Rural Support Programme (AKRSP) Provides PPE worth PKR16,997,000 Chitral Government",
     },
   ],
 ];
 
 const Hero = () => {
-  const [Active, setActive] = useState("FirstCard");
+  const [active, setActive] = useState("FirstCard");
+  const [isactive, setIsActive] = useState(0);
 
+  const navigate = (index: any) => {
+    setIsActive(index);
+    setActive(active === "FirstCard" ? "SecondCard" : "FirstCard");
+  };
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+  const Label = [
+    {
+      label: "",
+      index: 0,
+    },
+    {
+      label: "",
+      index: 1,
+    },
+    {
+      label: "",
+      index: 2,
+    },
+    {
+      label: "",
+      index: 3,
+    },
+    {
+      label: "",
+      index: 4,
+    },
+  ];
   return (
     <div
       className="container mt-20"
       data-aos="fade-down"
-      data-aos-duration="800"
+      data-aos-duration="1000"
     >
       <div className="">
-        <div className="bg-primary p-8 py-14 transition ease-in-out rounded-md">
-          {Active === "FirstCard" ? (
+        <div className="bg-primary p-8 py-14 transition ease-in-out">
+          {active === "FirstCard" ? (
             <HeroCard data={data}></HeroCard>
           ) : (
             <Card data={data} />
           )}
-          <div className="flex pt-8 space-x-3 ">
-            <button
-              onClick={() => setActive("FirstCard")}
-              className="h-2 w-12 bg-white opacity-40 border-primary active:opacity-400 focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
-            ></button>
-            <button
-              onClick={() => setActive("SecondCard")}
-              className="h-2 w-12 bg-white opacity-40 border-primary focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
-            ></button>
-            <button
-              onClick={() => setActive("FirstCard")}
-              className="h-2 w-12 bg-white opacity-40 border-primary focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
-            ></button>
-            <button
-              onClick={() => setActive("SecondCard")}
-              className="h-2 w-12 bg-white opacity-40 border-primary focus:bg-white focus:opacity-100 focus:z-10 focus:ring-1 focus:ring-primary-500 rounded"
-            ></button>
+          <div className="flex pt-8 space-x-3 first:bg-red-900 ">
+            {Label.map((item, index) => (
+              <div>
+                <button
+                  onClick={() => navigate(item.index)}
+                  className={`h-2 w-12 bg-white opacity-100 rounded first:bg-white ${
+                    index === isactive
+                      ? "bg-white opacity-100"
+                      : "bg-white opacity-40"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       </div>

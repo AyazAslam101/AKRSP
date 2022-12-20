@@ -26,6 +26,46 @@ const Gallery = () => {
       },
     ],
   ];
+  const label = [
+    {
+      icon: (props: any) => (
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 8 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...props}
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M6.02354 1.14328C6.39688 0.769938 7.00218 0.769938 7.37552 1.14328C7.74858 1.51633 7.74891 2.12107 7.37626 2.49453L3.66162 6.21729L7.37626 9.94004C7.74891 10.3135 7.74858 10.9182 7.37553 11.2913C7.00218 11.6646 6.39688 11.6646 6.02354 11.2913L0.949532 6.21729L6.02354 1.14328Z"
+          />
+        </svg>
+      ),
+      value: "first",
+    },
+    {
+      icon: (props: any) => (
+        <svg
+          width="14"
+          height="16"
+          viewBox="0 0 8 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          {...props}
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1.97646 10.8567C1.60312 11.2301 0.997816 11.2301 0.624475 10.8567C0.251422 10.4837 0.251093 9.87893 0.623739 9.50547L4.33838 5.78271L0.623738 2.05996C0.251092 1.6865 0.251422 1.08176 0.624475 0.708709C0.997816 0.335367 1.60312 0.335367 1.97646 0.708709L7.05047 5.78271L1.97646 10.8567Z"
+          />
+        </svg>
+      ),
+      value: "second",
+    },
+  ];
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -235,7 +275,7 @@ const Gallery = () => {
           </Slide>
         </Slider>
         <div className="flex items-center justify-center lg:mt-8 md:mt-8 sm:mt-4 mt-3">
-          <ButtonBack className="border-primary border-solid border-2 py-3 px-4 rounded ">
+          <ButtonBack className="border-primary border-solid border-2 py-2.5 px-4 rounded ">
             <svg
               width="14"
               height="14"
@@ -251,7 +291,7 @@ const Gallery = () => {
               />
             </svg>
           </ButtonBack>
-          <ButtonNext className="border-primary border-solid border-2 py-3 px-4 rounded ml-3">
+          <ButtonNext className="border-primary border-solid border-2 py-2.5 px-4 rounded ml-3">
             <svg
               width="14"
               height="14"

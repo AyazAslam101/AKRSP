@@ -47,7 +47,7 @@ const Programmes = () => {
           </div>
         </div>
         <div
-          className="lg:grid lg:grid-cols-2 md:block md:gap-4 lg:gap-4 items-center mt-16"
+          className="lg:grid lg:grid-cols-2 md:block md:gap-4 lg:gap-4 items-center mt-20"
           data-aos="fade-left"
           data-aos-duration="800"
         >

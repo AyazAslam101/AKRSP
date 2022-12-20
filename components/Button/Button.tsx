@@ -21,7 +21,7 @@ const Button = (props: {
           setOpen(true);
         }}
       >
-        {props.children} 
+        {props.children}
       </button>
       {open && (
         <div className="relative -top-20 -right-1 w-96 h-screen bg-tertiary">
@@ -29,7 +29,7 @@ const Button = (props: {
             onClick={() => {
               setOpen(false);
             }}
-            className="relative w-30 top-2 left-4 border-2 px-6 py-2 rounded bg-white bg-white px-5 py-2 rounded-md hover::bg-primary hover:text-white focus:bg-primary focus:text-white focus:z-10 focus:ring-primary-500 focus:border-2"
+            className="relative w-30 top-2 left-4 border-2 px-6 py-2 rounded bg-white bg-white px-5 py-2 rounded-md hover:bg-primary hover:text-white focus:bg-primary focus:text-white focus:z-10 focus:ring-primary-500 focus:border-2"
           >
             Close
           </button>
