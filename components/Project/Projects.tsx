@@ -152,6 +152,7 @@ const Projects = () => {
         <div className="flex">
           {label.map((item: any) => (
             <div
+              key={item.name}
               className="first:mr-3"
               onClick={
                 item.value === "first"

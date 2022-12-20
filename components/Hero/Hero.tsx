@@ -74,7 +74,7 @@ const Hero = () => {
           )}
           <div className="flex pt-8 space-x-3 first:bg-red-900 ">
             {Label.map((item, index) => (
-              <div>
+              <div key={index}>
                 <button
                   onClick={() => navigate(item.index)}
                   className={`h-2 w-12 bg-white opacity-100 rounded first:bg-white ${

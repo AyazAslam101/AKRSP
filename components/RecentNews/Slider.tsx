@@ -208,7 +208,9 @@ function Slider() {
           <div className="flex flex-wrap mt-6 items-center text-xl">
             {dataTabs.map((item, index) => {
               return (
-                <div onClick={() => handleClick(item.value)}>
+                <div
+                key={index}
+                 onClick={() => handleClick(item.value)}>
                   <Chip
                     key={index}
                     item={item}
@@ -226,6 +228,7 @@ function Slider() {
             <div className="flex lg:mr-4">
               {label.map((item: any) => (
                 <div
+                  key={item.value}
                   className="first:mr-3"
                   onClick={
                     item.value === "first"
