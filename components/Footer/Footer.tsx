@@ -1,9 +1,4 @@
 const navigation = {
-  main: [
-    { name: "Terms & Conditions", href: "/terms-and-conditions" },
-    { name: "Privacy Policy", href: "/privacy-policy" },
-    { name: "Donors", href: "/donors" },
-  ],
   links: [
     {
       name: "About us",
@@ -123,10 +118,13 @@ const Footer = () => {
                             </a>
                             <div>
                               {items?.order?.map((items: any, key: any) => (
-                                <div key={key}>
-                                  <p className="p-2 -ml-2 font-normal text-base leading-7 hover:text-primary">
+                                <div className="mb-3 mt-4" key={key}>
+                                  <a
+                                    href="#"
+                                    className="p-2 -ml-2 font-normal text-base leading-7 hover:text-primary cursor-pointer"
+                                  >
                                     {items?.name}
-                                  </p>
+                                  </a>
                                 </div>
                               ))}
                             </div>
@@ -142,7 +140,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-primary">
-        <div className="block lg:flex justify-between md:grid-cols-2 sm:block items-baseline mb-1 container px-14 py-2">
+        <div className="block lg:flex justify-between md:grid-cols-2 sm:block items-baseline container px-14 py-2">
           <div>
             <p className="text-center text-sm font-normal text-white">
               &copy;{new Date().getFullYear()} Aga Khan Rural Support Programme.
@@ -150,16 +148,28 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex justify-center text-center">
-            {navigation.main.map((item: any, key: any) => (
-              <div key={key} className="px-1 py-2 flex ">
-                <a
-                  href="#"
-                  className="text-sm font-normal text-white flex whitespace-nowrap after:ml-1 after:content-['|']"
-                >
-                  <span>{item.name} </span>
-                </a>
-              </div>
-            ))}
+            <div className="px-1 py-2 flex">
+              <a
+                href="#"
+                className="text-sm font-normal text-white flex whitespace-nowrap mr-1"
+              >
+                Terms & Conditions
+                <span className="ml-1">|</span>
+              </a>
+              <a
+                href="#"
+                className="text-sm font-normal text-white flex whitespace-nowrap mr-1"
+              >
+                Privacy Policy
+                <span className="ml-1">|</span>
+              </a>
+              <a
+                href="#"
+                className="text-sm font-normal text-white flex whitespace-nowrap"
+              >
+                Donors
+              </a>
+            </div>
           </div>
         </div>
       </div>

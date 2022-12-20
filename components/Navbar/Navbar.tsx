@@ -20,7 +20,6 @@ const navigation = {
     },
     {
       name: "Programmes",
-      href: "/privacy-policy",
       type: "show-arrow",
       sub_main: [
         { name: "Economic Pillar", href: "/economic" },
@@ -37,7 +36,6 @@ const navigation = {
     },
     {
       name: "Opportunities",
-      href: "/Opportunities",
       type: "show-arrow",
       sub_main: [
         { name: "Jobs", href: "/jobs" },
@@ -64,7 +62,7 @@ const navigation = {
         { name: "Brochures", href: "/brochures" },
       ],
     },
-    { name: "News", href: "/News" },
+    { name: "News", href: "#" },
   ],
 };
 
@@ -101,7 +99,7 @@ const Navbar = () => {
                       >
                         <div>
                           <Menu.Button className="inline-flex font-medium text-xl text-secondary hover:text-primary focus:text-primary whitespace-nowrap p-4 cursor-pointer flex items-center focus:outline-none ">
-                            <a href="#">{item.name}</a>
+                            <a href={item.href}>{item.name}</a>
                             {item.type === "show-arrow" && (
                               <ChevronDownIcon
                                 className="-mr-1 ml-2 h-5 w-5"
@@ -151,7 +149,7 @@ const Navbar = () => {
                   })}
                 </div>
               </div>
-              <div className="absolute shrink top-2 right-0 container z-10">
+              <div className="absolute shrink top-2 right-0 z-10">
                 <Button setOpen={setOpen} open={open} navigation={navigation}>
                   <svg
                     height="40"
