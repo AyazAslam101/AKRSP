@@ -78,7 +78,7 @@ const Navbar = () => {
     <>
       <div className="container">
         <div className="bg-bgprimary fixed left-0 z-10 w-full">
-          <div className="py-5 container lg:px-10 lg:pr-5 px-9 ">
+          <div className="py-5 container lg:px-10 lg:pr-12 px-9 ">
             <div className="flex-shrink-0 lg:flex sm:block justify-center items-baseline justify-between">
               <div>
                 <Link href="/">
@@ -151,7 +151,7 @@ const Navbar = () => {
                   })}
                 </div>
               </div>
-              <div className="absolute shrink top-2 right-0 z-10">
+              <div className="absolute shrink top-2 right-0 container z-10">
                 <Button setOpen={setOpen} open={open} navigation={navigation}>
                   <svg
                     height="40"
