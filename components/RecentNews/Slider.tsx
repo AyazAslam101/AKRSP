@@ -242,7 +242,7 @@ function Slider() {
                   >
                     {item.name}
                     <item.icon
-                      className="fill-primary"
+                      className="svg-fill fill-primary"
                       aria-hidden="true"
                     />
                   </button>

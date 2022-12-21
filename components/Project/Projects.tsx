@@ -165,10 +165,7 @@ const Projects = () => {
                 className="border-primary  border-solid border-2 py-2 px-3 hover:bg-primary rounded svg-fill"
               >
                 {item.name}
-                <item.icon
-                  className="fill-primary"
-                  aria-hidden="true"
-                />
+                <item.icon className="fill-primary svg-fill" aria-hidden="true" />
               </button>
             </div>
           ))}
