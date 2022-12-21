@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Button from "../Button/Button";
+import MenuButton from "../Button/Button";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { type } from "os";
 import Link from "next/link";
 
 const navigation = {
@@ -150,7 +149,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="absolute shrink top-2 right-0 z-10">
-                <Button setOpen={setOpen} open={open} navigation={navigation}>
+                <MenuButton setOpen={setOpen} open={open} navigation={navigation}>
                   <svg
                     height="40"
                     viewBox="0 0 24 24"
@@ -162,7 +161,7 @@ const Navbar = () => {
                       d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
                     />
                   </svg>
-                </Button>
+                </MenuButton>
               </div>
             </div>
           </div>

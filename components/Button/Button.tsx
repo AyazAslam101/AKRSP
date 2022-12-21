@@ -6,7 +6,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
-const Button = (props: {
+const MenuButton = (props: {
   open?: any;
   children?: any;
   setOpen?: any;
@@ -35,7 +35,7 @@ const Button = (props: {
           </button>
 
           {navigation.main.map((item: any, key: any) => (
-            <Menu as="div" key={key} className="relative block text-left">
+            <Menu as="div" key={key} className="relative block ml-1">
               <div>
                 <Menu.Button className="inline-flex font-medium text-xl text-secondary hover:text-primary focus:text-primary whitespace-nowrap p-4 cursor-pointer flex items-center focus:outline-none ">
                   {item.name}
@@ -46,35 +46,41 @@ const Button = (props: {
                 </Menu.Button>
               </div>
 
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Menu.Items className="absolute right-10 z-10 mt-2 w-40 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  <div className="py-1">
-                    <Menu.Item>
-                      {({ active }) => (
-                        <a
-                          href="#"
-                          className={classNames(
-                            active
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-700",
-                            "block px-4 py-2 text-sm"
-                          )}
-                        >
-                          Edit
-                        </a>
-                      )}
-                    </Menu.Item>
-                  </div>
-                </Menu.Items>
-              </Transition>
+              {item.type === "show-arrow" && (
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
+                >
+                  <Menu.Items className="absolute right-10 z-10 mt-2 w-40 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <div className="py-1">
+                      {item?.sub_main?.map((items: any, key: any) => {
+                        return (
+                          <Menu.Item key={key}>
+                            {({ active }) => (
+                              <a
+                                href="#"
+                                className={classNames(
+                                  active
+                                    ? "bg-gray-100 text-primary"
+                                    : "text-gray-700",
+                                    "block px-4 py-2 text-sm"
+                                )}
+                              >
+                                {items.name}
+                              </a>
+                            )}
+                          </Menu.Item>
+                        );
+                      })}
+                    </div>
+                  </Menu.Items>
+                </Transition>
+              )}
             </Menu>
           ))}
         </div>
@@ -83,4 +89,4 @@ const Button = (props: {
   );
 };
 
-export default Button;
+export default MenuButton;
