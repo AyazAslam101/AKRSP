@@ -205,7 +205,7 @@ function Slider() {
       <div>
         <h2 className="text-4xl font-bold">Recent News</h2>
         <div className="flex mt-4 justify-between items-baseline">
-          <div className="flex flex-wrap mt-6 items-center text-xl">
+          <div className="flex sm:grid-cols-2 flex-wrap mt-6 items-center text-xl">
             {dataTabs.map((item, index) => {
               return (
                 <div
@@ -238,7 +238,7 @@ function Slider() {
                 >
                   <button
                     key={item.name}
-                    className="border-primary border-solid border-2 py-2 px-3 rounded"
+                    className="border-primary  border-solid border-2 py-2 px-3 hover:bg-primary rounded svg-fill"
                   >
                     {item.name}
                     <item.icon

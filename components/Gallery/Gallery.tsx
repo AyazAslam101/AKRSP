@@ -191,7 +191,7 @@ const Gallery = () => {
                       Development and Cooperation Project Duration: 3
                       Years (August 2014 - November 2017) Geographic Focus: All
                       24 Union Councils of Chitral District To provide the
-                      communities with access to clean and energy for
+                      communities with the access to clean and energy for
                       domestic and commercial purposes To promote productive use
                       of energy for generating income opportunities for the
                       rural households
@@ -275,10 +275,11 @@ const Gallery = () => {
           </Slide>
         </Slider>
         <div className="flex items-center justify-center lg:mt-8 md:mt-8 sm:mt-4 mt-3">
-          <ButtonBack className="border-primary border-solid border-2 py-2.5 px-4 rounded ">
+          <ButtonBack className="border-primary  border-solid border-2 py-2.5 px-3 hover:bg-primary rounded svg-fill mr-3">
             <svg
               width="14"
               height="14"
+              className="svg-fill"
               viewBox="0 0 8 12"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -291,11 +292,12 @@ const Gallery = () => {
               />
             </svg>
           </ButtonBack>
-          <ButtonNext className="border-primary border-solid border-2 py-2.5 px-4 rounded ml-3">
+          <ButtonNext className="border-primary  border-solid border-2 py-2.5 px-3 hover:bg-primary rounded svg-fill">
             <svg
               width="14"
               height="14"
               viewBox="0 0 8 12"
+              className="svg-fill"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >

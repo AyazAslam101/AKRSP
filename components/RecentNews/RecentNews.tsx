@@ -19,7 +19,7 @@ function RecentNews(props: {
         <div className="lg:mb-0 mb-4 cursor-pointer">
           <Image src={props.img} width={435} height={400} alt="alt " />
         </div>
-        <div className="lg:flex lg:justify-between block mt-3 mb-4 container">
+        <div className="flex justify-between mt-3 mb-4 container">
           <div className="flex items-center">
             <UserSvg />
             <p className="text-lblack text-lg ml-2">{props.name}</p>

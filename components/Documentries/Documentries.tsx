@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Player from "react-player";
@@ -29,17 +28,17 @@ const Documentries = () => {
       <div className="mt-16">
         <h2 className="text-3xl font-bold mb-1">MEDIA / DOCUMENTARIES</h2>
       </div>
-      <div className="lg:grid lg:grid-cols-3 items-center md:justify-center mt-10 mb-16 justify-center flex-rows grid md:grid-cols-2 lg:justify-evenly">
+      <div className="lg:grid lg:grid-cols-3 items-center mt-10 mb-16 flex-rows md:grid md:grid-cols-2">
         {data.map((data: any, index) => {
           return (
             <div
               key={index}
-              className="bg-playerbg px-3 py-7 mb-6  mr-5  cursor-pointer"
+              className="bg-playerbg px-3 py-7 mb-6 mr-5 cursor-pointer"
             >
               <Player
                 url={data.url}
                 width="100%"
-                height="23rem"
+                height="24rem"
                 controls={true}
               />
               <p className="mt-5 text-xl font-bold">{data.title}</p>

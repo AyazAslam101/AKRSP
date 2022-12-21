@@ -152,7 +152,7 @@ const Projects = () => {
         <div className="flex">
           {label.map((item: any) => (
             <div
-              key={item.name}
+              key={item.value}
               className="first:mr-3"
               onClick={
                 item.value === "first"
@@ -162,8 +162,7 @@ const Projects = () => {
             >
               <button
                 key={item.name}
-                onClick={() => setButton(item.value)}
-                className="border-primary border-solid border-2 py-2 px-3 rounded"
+                className="border-primary  border-solid border-2 py-2 px-3 hover:bg-primary rounded svg-fill"
               >
                 {item.name}
                 <item.icon

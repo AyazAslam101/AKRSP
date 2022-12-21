@@ -24,7 +24,7 @@ const Button = (props: {
         {props.children}
       </button>
       {open && (
-        <div className="relative -top-20 -right-1 w-[32rem] h-screen bg-tertiary">
+        <div className="relative -top-20 -right-1 w-96 h-screen bg-tertiary">
           <button
             onClick={() => {
               setOpen(false);
