@@ -35,7 +35,7 @@ const Header = () => {
                 className="md:flex md:flex-col hidden gap-3 pt-10 mx-auto"
                 data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
-                data-aos-duration="800"
+                data-aos-duration="1000"
               >
                 <div className="grid grid-cols-[350px_600px]">
                   <div className="cursor-pointer">
@@ -57,10 +57,10 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="grid grid-cols-[350px_500px]">
-                  <div className="px-1  cursor-pointer">
+                  <div className="cursor-pointer">
                     <Image
                       src="/Image3.png"
-                      width={190}
+                      width={195}
                       height={100}
                       alt="alt"
                     />
