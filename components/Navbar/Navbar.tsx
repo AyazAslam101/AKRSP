@@ -125,7 +125,7 @@ const Navbar = () => {
                                     <Menu.Item key={key}>
                                       {({ active }) => (
                                         <a
-                                          href="#"
+                                          href={items.href}
                                           className={classNames(
                                             active
                                               ? "bg-gray-100 text-primary"

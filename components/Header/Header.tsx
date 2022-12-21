@@ -16,8 +16,8 @@ const Header = () => {
           <div className="xl:grid xl:grid-cols-2 lg:block sm:block md:block block gap-36">
             <div className="lg:mt-32 md:10 sm:mt-10 mt-4">
               <h2 className="header-title">
-                Aga Khan Rural Support Programme <br />
-                <span className="text-primary font-bold leading-tight">
+                Aga Khan Rural Support Programme <br className="xl:block hidden"/>
+                <span className="text-primary font-bold leading-tight ml-1">
                   Pakistan
                 </span>
               </h2>
