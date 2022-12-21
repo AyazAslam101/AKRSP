@@ -97,7 +97,7 @@ const Navbar = () => {
                         className="relative inline-block text-left"
                       >
                         <div>
-                          <Menu.Button className="inline-flex font-medium text-xl text-secondary hover:text-primary focus:text-primary whitespace-nowrap p-4 cursor-pointer flex items-center focus:outline-none ">
+                          <Menu.Button className="inline-flex font-medium text-base text-secondary hover:text-primary focus:text-primary whitespace-nowrap p-4 cursor-pointer flex items-center focus:outline-none ">
                             <a href={item.href}>{item.name}</a>
                             {item.type === "show-arrow" && (
                               <ChevronDownIcon
