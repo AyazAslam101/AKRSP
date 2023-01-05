@@ -98,7 +98,7 @@ const Navbar = () => {
                       >
                         <div>
                           <Menu.Button className="inline-flex font-medium text-base text-secondary hover:text-primary focus:text-primary whitespace-nowrap p-4 cursor-pointer flex items-center focus:outline-none ">
-                            <a href={item.href}>{item.name}</a>
+                            <a href="#">{item.name}</a>
                             {item.type === "show-arrow" && (
                               <ChevronDownIcon
                                 className="-mr-1 ml-2 h-5 w-5"
@@ -125,7 +125,7 @@ const Navbar = () => {
                                     <Menu.Item key={key}>
                                       {({ active }) => (
                                         <a
-                                          href={items.href}
+                                          href="#"
                                           className={classNames(
                                             active
                                               ? "bg-gray-100 text-primary"

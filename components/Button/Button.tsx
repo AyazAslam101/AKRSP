@@ -63,7 +63,7 @@ const MenuButton = (props: {
                           <Menu.Item key={key}>
                             {({ active }) => (
                               <a
-                                href={items.href}
+                                href="#"
                                 className={classNames(
                                   active
                                     ? "bg-gray-100 text-primary"
